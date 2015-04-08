@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */; };
+		1B5788DD1AD1BE8E00A6D0BA /* DealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DC1AD1BE8E00A6D0BA /* DealListTableViewController.swift */; };
+		1B5788DF1AD1C30E00A6D0BA /* DealInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DE1AD1C30E00A6D0BA /* DealInfo.swift */; };
+		1B5788E31AD1C8D600A6D0BA /* DealData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788E21AD1C8D600A6D0BA /* DealData.swift */; };
 		1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */; };
-		1BDBF2D71ABEAB5200A0C45D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2D61ABEAB5200A0C45D /* FirstViewController.swift */; };
-		1BDBF2D91ABEAB5200A0C45D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2D81ABEAB5200A0C45D /* SecondViewController.swift */; };
 		1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DA1ABEAB5200A0C45D /* Main.storyboard */; };
 		1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */; };
 		1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DF1ABEAB5200A0C45D /* LaunchScreen.xib */; };
@@ -27,11 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCreateViewController.swift; sourceTree = "<group>"; };
+		1B5788DC1AD1BE8E00A6D0BA /* DealListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealListTableViewController.swift; sourceTree = "<group>"; };
+		1B5788DE1AD1C30E00A6D0BA /* DealInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealInfo.swift; sourceTree = "<group>"; };
+		1B5788E21AD1C8D600A6D0BA /* DealData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealData.swift; sourceTree = "<group>"; };
 		1BDBF2CF1ABEAB5100A0C45D /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDBF2D31ABEAB5200A0C45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BDBF2D61ABEAB5200A0C45D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1BDBF2D81ABEAB5200A0C45D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1BDBF2DB1ABEAB5200A0C45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BDBF2E01ABEAB5200A0C45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */,
-				1BDBF2D61ABEAB5200A0C45D /* FirstViewController.swift */,
-				1BDBF2D81ABEAB5200A0C45D /* SecondViewController.swift */,
+				1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */,
+				1B5788DC1AD1BE8E00A6D0BA /* DealListTableViewController.swift */,
 				1BDBF2DA1ABEAB5200A0C45D /* Main.storyboard */,
 				1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */,
 				1BDBF2DF1ABEAB5200A0C45D /* LaunchScreen.xib */,
 				1BDBF2D21ABEAB5200A0C45D /* Supporting Files */,
+				1B5788DE1AD1C30E00A6D0BA /* DealInfo.swift */,
+				1B5788E21AD1C8D600A6D0BA /* DealData.swift */,
 			);
 			path = Deal;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BDBF2D91ABEAB5200A0C45D /* SecondViewController.swift in Sources */,
+				1B5788DD1AD1BE8E00A6D0BA /* DealListTableViewController.swift in Sources */,
 				1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */,
-				1BDBF2D71ABEAB5200A0C45D /* FirstViewController.swift in Sources */,
+				1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */,
+				1B5788E31AD1C8D600A6D0BA /* DealData.swift in Sources */,
+				1B5788DF1AD1C30E00A6D0BA /* DealInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				1BDBF2F21ABEAB5200A0C45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BDBF2F31ABEAB5200A0C45D /* Build configuration list for PBXNativeTarget "DealTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				1BDBF2F51ABEAB5200A0C45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
