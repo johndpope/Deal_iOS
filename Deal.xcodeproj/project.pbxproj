@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */; };
 		1BBF409B1ADDA01700B2082B /* DealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */; };
+		1BBF409D1ADDBBC400B2082B /* DealCustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBF409C1ADDBBC400B2082B /* DealCustomTableCell.swift */; };
+		1BBF409F1ADDBF1800B2082B /* icon-profile-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBF409E1ADDBF1800B2082B /* icon-profile-default.png */; };
 		1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */; };
 		1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DA1ABEAB5200A0C45D /* Main.storyboard */; };
 		1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCreateViewController.swift; sourceTree = "<group>"; };
 		1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		1BBF409C1ADDBBC400B2082B /* DealCustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCustomTableCell.swift; sourceTree = "<group>"; };
+		1BBF409E1ADDBF1800B2082B /* icon-profile-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-profile-default.png"; sourceTree = "<group>"; };
 		1BDBF2CF1ABEAB5100A0C45D /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDBF2D31ABEAB5200A0C45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */,
 				1BDBF2DF1ABEAB5200A0C45D /* LaunchScreen.xib */,
 				1BDBF2D21ABEAB5200A0C45D /* Supporting Files */,
+				1BBF409C1ADDBBC400B2082B /* DealCustomTableCell.swift */,
 			);
 			path = Deal;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		1BDBF2D21ABEAB5200A0C45D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1BBF409E1ADDBF1800B2082B /* icon-profile-default.png */,
 				1BE7C0A01ADC953700E029F3 /* add_deal.png */,
 				1BDBF2D31ABEAB5200A0C45D /* Info.plist */,
 			);
@@ -210,6 +216,7 @@
 				1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */,
 				1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */,
 				1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */,
+				1BBF409F1ADDBF1800B2082B /* icon-profile-default.png in Resources */,
 				1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +238,7 @@
 				1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */,
 				1BBF409B1ADDA01700B2082B /* DealDetailViewController.swift in Sources */,
 				1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */,
+				1BBF409D1ADDBBC400B2082B /* DealCustomTableCell.swift in Sources */,
 				1BE7C09F1ADC79AE00E029F3 /* MainViewController.swift in Sources */,
 				1BE7C0A31ADCA20D00E029F3 /* Deal.swift in Sources */,
 				1BE7C0A51ADD902E00E029F3 /* DealDataManager.swift in Sources */,

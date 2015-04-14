@@ -48,20 +48,34 @@ class DealCreateViewController: UIViewController {
     
     @IBAction func parentAgreed(sender: AnyObject) {
         parent_agreed = true
+        parentAgreeBtn.selected = true
     }
     
     @IBAction func kidAgreed(sender: AnyObject) {
         kid_agreed = true
+        kidAgreeBtn.selected = true
     }
     
     @IBAction func makeDealBtnPressed(sender: AnyObject) {
-        if (parent_agreed && kid_agreed) {
-            //DealData().addDeal(new_deal)
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.deal_data_manager.addDeal(new_deal)
-            self.dismissViewControllerAnimated(true, completion: nil)
+        var errorMessage : String = ""
+        if (rewardTextField.text == "" || taskTextField.text == "") {
+            errorMessage = "You must enter both a task an a reward. Complete missing fields."
+        } else {
+            if (parent_agreed && kid_agreed) {
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                appDelegate.deal_data_manager.addDeal(new_deal)
+                self.dismissViewControllerAnimated(true, completion: nil)
+                return
+            } else {
+                 errorMessage = "You must enter both a task an a reward. Complete missing fields."
+            }
         }
+        var alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -20,14 +20,47 @@
                                 <rect key="frame" x="0.0" y="47" width="320" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DealDetailCellIdentifier" id="Lfl-Ca-nts">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DealDetailCellIdentifier" rowHeight="90" id="Lfl-Ca-nts" customClass="DealCustomTableCell" customModule="Deal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DealDetailCellIdentifier" tableViewCell="Lfl-Ca-nts" id="SPS-Op-Mx1">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64B-Lp-scf">
+                                                    <rect key="frame" x="117" y="25" width="35" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ish-az-S9C">
+                                                    <rect key="frame" x="117" y="54" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Participant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs6-6Q-ozB">
+                                                    <rect key="frame" x="97" y="0.0" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Participant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvz-go-8Ue">
+                                                    <rect key="frame" x="97" y="0.0" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Izx-e0-byq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="89" height="81"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="eUv-YN-2Q9" kind="modal" trigger="accessoryAction" id="pli-UH-ukS"/>
+                                            <outlet property="participant_label" destination="kvz-go-8Ue" id="M0H-PU-HpN"/>
+                                            <outlet property="picture_image_view" destination="Izx-e0-byq" id="eVf-jW-8HZ"/>
+                                            <outlet property="reward_label" destination="ish-az-S9C" id="gNI-3h-nZk"/>
+                                            <outlet property="task_label" destination="64B-Lp-scf" id="Nc2-fh-fRf"/>
+                                            <segue destination="eUv-YN-2Q9" kind="modal" identifier="dealDetail" trigger="accessoryAction" id="pli-UH-ukS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -215,6 +248,7 @@
     </scenes>
     <resources>
         <image name="add_deal.png" width="512" height="512"/>
+        <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

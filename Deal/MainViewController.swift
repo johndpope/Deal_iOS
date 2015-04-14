@@ -17,16 +17,44 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var family_filter_btn: UIButton!
     @IBOutlet weak var friends_filter_btn: UIButton!
     
+    func mark_filter_btn (type : Deal.FilterType) {
+         var pressed_1 = false
+         var pressed_2  = false
+         var pressed_3 = false
+        switch (type) {
+            
+            case Deal.FilterType.ME_FILTER_TYPE :
+                pressed_1 = true
+            break
+            case Deal.FilterType.FAMILY_FILTER_TYPE :
+                pressed_2 = true
+            break
+            
+            case Deal.FilterType.FRIENDS_FILTER_TYPE :
+                pressed_3 = true
+            break
+            
+        }
+        me_filter_btn.selected = pressed_1
+        family_filter_btn.selected = pressed_2
+        friends_filter_btn.selected = pressed_3
+        
+    }
+    
+    
     @IBAction func me_filter_pressed(sender: AnyObject) {
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
+        mark_filter_btn(Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     @IBAction func family_filter_pressed(sender: AnyObject) {
         filter_deals (Deal.FilterType.FAMILY_FILTER_TYPE)
+         mark_filter_btn(Deal.FilterType.FAMILY_FILTER_TYPE)
         self.tableView.reloadData()
     }
     @IBAction func friends_filter_pressed(sender: AnyObject) {
         filter_deals (Deal.FilterType.FRIENDS_FILTER_TYPE)
+         mark_filter_btn(Deal.FilterType.FRIENDS_FILTER_TYPE)
         self.tableView.reloadData()
         
     }
@@ -74,11 +102,15 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
   
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(dealCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(dealCellIdentifier, forIndexPath: indexPath)as! UITableViewCell
+        
+        // TODO: change this to deqeue soon
+        //let cell = DealCustomTableCell ()
+        
         
         let row = indexPath.row
-        cell.textLabel?.text = filtered_deals[row].task
-        
+        //cell.populate_with_data(filtered_deals[row])
+        cell.textLabel!.text = filtered_deals[row].task
         return cell
     }
     
@@ -106,11 +138,12 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func viewDidAppear(animated: Bool) {
+        println("Mainviewcontroller: viewDidAppear called")
+        filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
-        // Sample Data for candyArray
         // TODO: add real data to all_deals
         var all_deals = [Deal(task: "Clean the house", reward: "Get Candy", type: Deal.FilterType.ME_FILTER_TYPE),
         Deal(task: "Kiss your mom", reward: "Get money", type: Deal.FilterType.ME_FILTER_TYPE),
@@ -124,10 +157,10 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
             appDelegate.deal_data_manager.addDeal(deal)
         }
         
-        filtered_deals = all_deals
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: dealCellIdentifier)
+        me_filter_btn.selected = true
     }
     
     /*
