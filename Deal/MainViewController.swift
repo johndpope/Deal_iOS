@@ -32,13 +32,13 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     let dealCellIdentifier = "DealDetailCellIdentifier"
     
-    var all_deals = [Deal]()
     var filtered_deals = [Deal]()
 
     func filter_deals(type : Deal.FilterType) {
         
         filtered_deals = []
-        for deal in all_deals {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        for deal in appDelegate.deal_data_manager.deals{
             if deal.type == type {
                 filtered_deals.append(deal)
             }
@@ -87,7 +87,6 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.performSegueWithIdentifier("dealDetail", sender: tableView)
         let row = indexPath.row
-        println(all_deals[row])
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -106,23 +105,29 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     
+    override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         // Sample Data for candyArray
         // TODO: add real data to all_deals
-        all_deals = [Deal(task: "Clean the house", reward: "Get Candy", type: Deal.FilterType.ME_FILTER_TYPE),
+        var all_deals = [Deal(task: "Clean the house", reward: "Get Candy", type: Deal.FilterType.ME_FILTER_TYPE),
         Deal(task: "Kiss your mom", reward: "Get money", type: Deal.FilterType.ME_FILTER_TYPE),
         Deal(task: "Pick up grandma", reward: "Get licorice", type: Deal.FilterType.FRIENDS_FILTER_TYPE),
         Deal(task: "Do homework", reward: "Get Xbox", type: Deal.FilterType.ME_FILTER_TYPE),
         Deal(task: "Practice Piano", reward: "Get stoned", type: Deal.FilterType.FAMILY_FILTER_TYPE),
         Deal(task: "Practice guitar", reward: "Get game gold", type: Deal.FilterType.FRIENDS_FILTER_TYPE)
         ]
-        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        for deal in all_deals {
+            appDelegate.deal_data_manager.addDeal(deal)
+        }
         
         filtered_deals = all_deals
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: dealCellIdentifier)
-        self.tableView.reloadData()
     }
     
     /*

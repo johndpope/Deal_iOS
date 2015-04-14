@@ -36,6 +36,9 @@ class DealCreateViewController: UIViewController {
         let new_task = taskTextField.text
         new_deal.task = new_task
     }
+    @IBAction func exit_pressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func rewardEntered(sender: AnyObject) {
         let new_reward = rewardTextField.text
@@ -54,7 +57,9 @@ class DealCreateViewController: UIViewController {
     @IBAction func makeDealBtnPressed(sender: AnyObject) {
         if (parent_agreed && kid_agreed) {
             //DealData().addDeal(new_deal)
-            
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.deal_data_manager.addDeal(new_deal)
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
     override func didReceiveMemoryWarning() {

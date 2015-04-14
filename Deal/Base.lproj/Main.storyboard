@@ -26,6 +26,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DealDetailCellIdentifier" tableViewCell="Lfl-Ca-nts" id="SPS-Op-Mx1">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eUv-YN-2Q9" kind="modal" trigger="accessoryAction" id="pli-UH-ukS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -69,7 +72,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4KI-dR-dSQ" kind="push" id="NFE-Dk-jR3"/>
+                                    <segue destination="4KI-dR-dSQ" kind="modal" id="gJ3-3D-bQ9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,6 +98,24 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="318" y="-509"/>
+        </scene>
+        <!--DealDetailViewController-->
+        <scene sceneID="RkL-Tt-V9w">
+            <objects>
+                <viewController title="DealDetailViewController" id="eUv-YN-2Q9" customClass="DealDetailViewController" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zC6-Ly-BcZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwz-tI-cor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPb-m6-7VV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5a0-06-GfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="-622"/>
         </scene>
         <!--Create-->
         <scene sceneID="zBx-kZ-prU">
@@ -165,6 +186,15 @@
                                     <action selector="rewardEntered:" destination="4KI-dR-dSQ" eventType="editingDidEnd" id="VuN-Xj-Gvm"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yym-AJ-m6e">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <state key="normal" title="exit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit_pressed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="Jip-ha-aTG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

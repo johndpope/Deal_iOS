@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */; };
+		1BBF409B1ADDA01700B2082B /* DealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */; };
 		1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */; };
 		1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DA1ABEAB5200A0C45D /* Main.storyboard */; };
 		1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCreateViewController.swift; sourceTree = "<group>"; };
+		1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		1BDBF2CF1ABEAB5100A0C45D /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDBF2D31ABEAB5200A0C45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		1BDBF2D11ABEAB5100A0C45D /* Deal */ = {
 			isa = PBXGroup;
 			children = (
+				1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */,
 				1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */,
 				1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */,
 				1BE7C09E1ADC79AE00E029F3 /* MainViewController.swift */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDBF2D51ABEAB5200A0C45D /* AppDelegate.swift in Sources */,
+				1BBF409B1ADDA01700B2082B /* DealDetailViewController.swift in Sources */,
 				1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */,
 				1BE7C09F1ADC79AE00E029F3 /* MainViewController.swift in Sources */,
 				1BE7C0A31ADCA20D00E029F3 /* Deal.swift in Sources */,
