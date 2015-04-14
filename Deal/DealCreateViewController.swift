@@ -11,10 +11,12 @@ import UIKit
 class DealCreateViewController: UIViewController {
 
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        //fatalError("init(coder:) has not been implemented")
+        self.new_deal = Deal(task: "", reward: "", type: Deal.FilterType.ME_FILTER_TYPE)
+        super.init(coder: aDecoder)
     }
 
-    var new_deal : DealInfo
+    var new_deal : Deal
     
     var parent_agreed : Bool = false
     var kid_agreed : Bool = false
@@ -27,18 +29,18 @@ class DealCreateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        new_deal = DealInfo()
         // Do any additional setup after loading the view.
     }
     @IBAction func taskEntered(sender: AnyObject) {
         
         let new_task = taskTextField.text
-        new_deal.setTask(new_task)
+        new_deal.task = new_task
     }
     
     @IBAction func rewardEntered(sender: AnyObject) {
         let new_reward = rewardTextField.text
-        new_deal.setReward(new_reward)
+        //new_deal.setReward(new_reward)
+        new_deal.reward = new_reward
     }
     
     @IBAction func parentAgreed(sender: AnyObject) {
@@ -51,7 +53,8 @@ class DealCreateViewController: UIViewController {
     
     @IBAction func makeDealBtnPressed(sender: AnyObject) {
         if (parent_agreed && kid_agreed) {
-            DealData().addDeal(new_deal)
+            //DealData().addDeal(new_deal)
+            
         }
     }
     override func didReceiveMemoryWarning() {
