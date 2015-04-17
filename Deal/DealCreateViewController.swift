@@ -34,7 +34,7 @@ class DealCreateViewController: UIViewController {
     @IBAction func taskEntered(sender: AnyObject) {
         
         let new_task = taskTextField.text
-        new_deal.task = new_task
+        new_deal.Task = new_task
     }
     @IBAction func exit_pressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -43,7 +43,7 @@ class DealCreateViewController: UIViewController {
     @IBAction func rewardEntered(sender: AnyObject) {
         let new_reward = rewardTextField.text
         //new_deal.setReward(new_reward)
-        new_deal.reward = new_reward
+        new_deal.Reward = new_reward
     }
     
     @IBAction func parentAgreed(sender: AnyObject) {
