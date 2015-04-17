@@ -86,8 +86,8 @@ class DealCustomTableCell: UITableViewCell {
         if (task_label == nil) {
             println ("Found nil!!")
         }
-        task_label.text = deal.task
-        reward_label.text = deal.reward
+        task_label.text = deal.Task
+        reward_label.text = deal.Reward
         participant_label.text = "PARTICIPANT"
         
     }

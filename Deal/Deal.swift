@@ -1,14 +1,14 @@
 //
-//  Deal.swift
+//  DealModel.swift
 //  Deal
 //
-//  Created by Do Kwon on 4/13/15.
+//  Created by Ki Suk Jang on 4/16/15.
 //  Copyright (c) 2015 Do Kwon. All rights reserved.
 //
 
 import Foundation
 
-class Deal {
+class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     enum FilterType {
         case ME_FILTER_TYPE
@@ -16,22 +16,37 @@ class Deal {
         case FRIENDS_FILTER_TYPE
     }
     
-    var task : String
-    var reward : String
-    var deal_type : FilterType
-    var complete : Bool
-    /*var incipient : DealUser = nil
-    var recipient : DealUser = nil
-    var complete_timestamp : time_value_t = nil
-    var proposed_timestamp : time_value_t = nil*/
+    var Deal_Id : String = ""
+    var Dealer_Id : String = ""
+    var Dealee_Id : String = ""
+    var Task  : String = ""
+    var Reward   : String = ""
+    var Type   : FilterType = FilterType.ME_FILTER_TYPE
+    var Complete : Bool = false
+    
+    override init!() { super.init() }
     
     init (task : String, reward :String, deal_type: FilterType) {
-        self.task = task
-        self.reward = reward
-        complete = false;
-        self.deal_type = deal_type
+        super.init()
+        self.Task = task
+        self.Reward = reward
+        self.Complete = false
+        self.Type = deal_type
     }
     
+    required init!(coder: NSCoder!) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    class func dynamoDBTableName() -> String! {
+        return "Deal"
+    }
+    class func hashKeyAttribute() -> String! {
+        return "Deal_Id"
+    }
+    /*class func rangeKeyAttribute() -> String! {
+    return ""
+    }*/
     
     class func type_to_int (type : FilterType) ->Int{
         switch (type) {

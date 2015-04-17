@@ -67,7 +67,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         filtered_deals = []
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         for deal in appDelegate.deal_data_manager!.deals {
-            if deal.deal_type == type {
+            if deal.Type == type {
                 filtered_deals.append(deal)
             }
             
