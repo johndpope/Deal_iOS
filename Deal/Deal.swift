@@ -55,6 +55,4 @@ class Deal {
             return  FilterType.ME_FILTER_TYPE
         }
     }
-    
-
 }

@@ -116,7 +116,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="profile_picture_pressed:" destination="PS7-ig-PRl" eventType="touchUpInside" id="GDq-hC-It1"/>
+                                                        <action selector="profile_picture_pressed:" destination="Lfl-Ca-nts" eventType="touchUpInside" id="33V-HP-zYY"/>
                                                         <segue destination="jUj-Iw-1Mi" kind="modal" identifier="show_profile" id="3fs-E0-fFH"/>
                                                     </connections>
                                                 </button>
@@ -132,8 +132,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="M62-70-yhz" id="srl-cc-36s"/>
-                                    <outlet property="delegate" destination="M62-70-yhz" id="6ZP-W9-B91"/>
+                                    <outlet property="dataSource" destination="PS7-ig-PRl" id="KhE-hc-B4a"/>
+                                    <outlet property="delegate" destination="PS7-ig-PRl" id="mI1-ey-LTQ"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2M-YK-uau">
@@ -194,14 +194,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnH-8o-mgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="EMk-D6-1oJ">
-                    <connections>
-                        <outlet property="delegate" destination="PS7-ig-PRl" id="NJw-3z-Ced"/>
-                        <outlet property="searchContentsController" destination="PS7-ig-PRl" id="DTv-hg-LES"/>
-                        <outlet property="searchResultsDataSource" destination="PS7-ig-PRl" id="sne-zO-7Yc"/>
-                        <outlet property="searchResultsDelegate" destination="PS7-ig-PRl" id="vPG-Nk-C8u"/>
-                    </connections>
-                </searchDisplayController>
+                <searchDisplayController id="EMk-D6-1oJ"/>
             </objects>
             <point key="canvasLocation" x="318" y="-509"/>
         </scene>

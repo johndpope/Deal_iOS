@@ -127,37 +127,6 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         let row = indexPath.row
     }
     
-    @IBAction func profile_picture_pressed(sender: AnyObject) {
-        // 1
-        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
-        
-        // 2
-        let deleteAction = UIAlertAction(title: "Show profile", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            self.performSegueWithIdentifier(self.show_profile_segue_identifier, sender: sender)
-        })
-        let saveAction = UIAlertAction(title: "Make Deal", style: .Default, handler: {
-            (alert: UIAlertAction!) -> Void in
-             self.performSegueWithIdentifier(self.specific_make_deal_segue_identifier, sender: sender)
-        })
-        
-        //
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
-            
-        })
-        
-        
-        // 4
-        optionMenu.addAction(deleteAction)
-        optionMenu.addAction(saveAction)
-        optionMenu.addAction(cancelAction)
-        
-        // 5
-        self.presentViewController(optionMenu, animated: true, completion: nil)
-        
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == self.specific_make_deal_segue_identifier{
             let makeDealViewController = segue.destinationViewController as! UIViewController
@@ -202,8 +171,8 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
             appDelegate.deal_data_manager!.saveDeal(deal)
         }
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        //tableView.delegate = self
+        //tableView.dataSource = self
         me_filter_btn.selected = true
     }
     
