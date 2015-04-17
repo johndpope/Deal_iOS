@@ -12,7 +12,7 @@ class DealCreateViewController: UIViewController {
 
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
-        self.new_deal = Deal(task: "", reward: "", type: Deal.FilterType.ME_FILTER_TYPE)
+        self.new_deal = Deal(task: "", reward: "", deal_type: Deal.FilterType.ME_FILTER_TYPE)
         super.init(coder: aDecoder)
     }
 
@@ -61,9 +61,11 @@ class DealCreateViewController: UIViewController {
         if (rewardTextField.text == "" || taskTextField.text == "") {
             errorMessage = "You must enter both a task an a reward. Complete missing fields."
         } else {
+            
+        
             if (parent_agreed && kid_agreed) {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                appDelegate.deal_data_manager.addDeal(new_deal)
+                appDelegate.deal_data_manager!.saveDeal(new_deal)
                 self.dismissViewControllerAnimated(true, completion: nil)
                 return
             } else {
@@ -74,8 +76,6 @@ class DealCreateViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

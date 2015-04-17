@@ -66,10 +66,11 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         
         filtered_deals = []
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        for deal in appDelegate.deal_data_manager.deals{
-            if deal.type == type {
+        for deal in appDelegate.deal_data_manager!.deals {
+            if deal.deal_type == type {
                 filtered_deals.append(deal)
             }
+            
         }
     }
     
@@ -100,31 +101,69 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
             return self.deals.count
         }*/
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 110
+    }
   
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(dealCellIdentifier, forIndexPath: indexPath)as! UITableViewCell
-        
-        // TODO: change this to deqeue soon
-        //let cell = DealCustomTableCell ()
-        
-        
+        var cell = tableView.dequeueReusableCellWithIdentifier(dealCellIdentifier, forIndexPath: indexPath)as? DealCustomTableCell
+        if (cell == nil) {
+            cell = DealCustomTableCell (style: UITableViewCellStyle.Default, reuseIdentifier: dealCellIdentifier)
+        }
         let row = indexPath.row
-        //cell.populate_with_data(filtered_deals[row])
-        cell.textLabel!.text = filtered_deals[row].task
-        return cell
+        cell!.populate_with_data(filtered_deals[row])
+        return cell!
     }
+    
+    let show_profile_segue_identifier = "show_profile"
+    let specific_make_deal_segue_identifier = "specific_make_deal"
+    let deal_detail_segue_identifer = "deal_detail"
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println ("NOT IMPLEMENTED YET")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.performSegueWithIdentifier("dealDetail", sender: tableView)
+        self.performSegueWithIdentifier(deal_detail_segue_identifer, sender: tableView)
         let row = indexPath.row
     }
     
+    @IBAction func profile_picture_pressed(sender: AnyObject) {
+        // 1
+        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
+        
+        // 2
+        let deleteAction = UIAlertAction(title: "Show profile", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.performSegueWithIdentifier(self.show_profile_segue_identifier, sender: sender)
+        })
+        let saveAction = UIAlertAction(title: "Make Deal", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+             self.performSegueWithIdentifier(self.specific_make_deal_segue_identifier, sender: sender)
+        })
+        
+        //
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+        })
+        
+        
+        // 4
+        optionMenu.addAction(deleteAction)
+        optionMenu.addAction(saveAction)
+        optionMenu.addAction(cancelAction)
+        
+        // 5
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        /*if segue.identifier == "candyDetail" {
-            let candyDetailViewController = segue.destinationViewController as UIViewController
-            if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
+        if segue.identifier == self.specific_make_deal_segue_identifier{
+            let makeDealViewController = segue.destinationViewController as! UIViewController
+            
+            
+            /*if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
                 let indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow()!
                 let destinationTitle = self.filteredCandies[indexPath.row].name
                 candyDetailViewController.title = destinationTitle
@@ -132,34 +171,39 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
                 let indexPath = self.tableView.indexPathForSelectedRow()!
                 let destinationTitle = self.candies[indexPath.row].name
                 candyDetailViewController.title = destinationTitle
-            }
-        }*/
+            }*/
+        } else if segue.identifier == self.show_profile_segue_identifier {
+            
+        } else if segue.identifier == self.deal_detail_segue_identifer {
+            
+            
+        } else {
+            println ("ERROR: not working")
+        }
     }
     
     
     override func viewDidAppear(animated: Bool) {
-        println("Mainviewcontroller: viewDidAppear called")
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
         // TODO: add real data to all_deals
-        var all_deals = [Deal(task: "Clean the house", reward: "Get Candy", type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Kiss your mom", reward: "Get money", type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Pick up grandma", reward: "Get licorice", type: Deal.FilterType.FRIENDS_FILTER_TYPE),
-        Deal(task: "Do homework", reward: "Get Xbox", type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Practice Piano", reward: "Get stoned", type: Deal.FilterType.FAMILY_FILTER_TYPE),
-        Deal(task: "Practice guitar", reward: "Get game gold", type: Deal.FilterType.FRIENDS_FILTER_TYPE)
+        var all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE),
+        Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE),
+        Deal(task: "Pick up grandma", reward: "Get licorice", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE),
+        Deal(task: "Do homework", reward: "Get Xbox", deal_type: Deal.FilterType.ME_FILTER_TYPE),
+        Deal(task: "Practice Piano", reward: "Get stoned", deal_type: Deal.FilterType.FAMILY_FILTER_TYPE),
+        Deal(task: "Practice guitar", reward: "Get game gold", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE)
         ]
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         for deal in all_deals {
-            appDelegate.deal_data_manager.addDeal(deal)
+            appDelegate.deal_data_manager!.saveDeal(deal)
         }
         
         tableView.delegate = self
         tableView.dataSource = self
-        self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: dealCellIdentifier)
         me_filter_btn.selected = true
     }
     

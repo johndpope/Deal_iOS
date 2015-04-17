@@ -18,14 +18,43 @@ class Deal {
     
     var task : String
     var reward : String
-    var type : FilterType
+    var deal_type : FilterType
     var complete : Bool
+    /*var incipient : DealUser = nil
+    var recipient : DealUser = nil
+    var complete_timestamp : time_value_t = nil
+    var proposed_timestamp : time_value_t = nil*/
     
-    init (task : String, reward :String, type: FilterType) {
+    init (task : String, reward :String, deal_type: FilterType) {
         self.task = task
         self.reward = reward
         complete = false;
-        self.type = type
+        self.deal_type = deal_type
     }
+    
+    
+    class func type_to_int (type : FilterType) ->Int{
+        switch (type) {
+        case FilterType.ME_FILTER_TYPE :
+            return 0
+        case FilterType.FAMILY_FILTER_TYPE :
+            return 1
+        case FilterType.FRIENDS_FILTER_TYPE :
+            return 2
+        }
+    }
+    class func int_to_type (stored_type : Int) ->FilterType{
+        switch (stored_type) {
+        case 0:
+            return FilterType.ME_FILTER_TYPE
+        case 1 :
+            return FilterType.FAMILY_FILTER_TYPE
+        case 2:
+            return FilterType.FRIENDS_FILTER_TYPE
+        default :
+            return  FilterType.ME_FILTER_TYPE
+        }
+    }
+    
 
 }
