@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -76,7 +76,7 @@
         <!--Item-->
         <scene sceneID="79i-Hm-M7K">
             <objects>
-                <viewController id="PS7-ig-PRl" customClass="MainViewConroller" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main_controller_id" id="PS7-ig-PRl" customClass="MainViewConroller" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YjH-ms-paU"/>
                         <viewControllerLayoutGuide type="bottom" id="Zxt-60-dP2"/>

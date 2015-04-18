@@ -156,7 +156,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
 
-    
+    /*
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         
         if sender is UIButton {
@@ -174,7 +174,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
            
         }
         return true
-    }
+    }*/
     
     
     
@@ -204,19 +204,17 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func viewDidAppear(animated: Bool) {
-        if (!logged_in)  {
+        if (FBSDKAccessToken.currentAccessToken() == nil)  {
             //performSegueWithIdentifier (login_segue_identifier, sender:self)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("login_controller_id") as! UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
         }
         
-        
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     
-    var logged_in = false
     
     /* Testing function. remove later */
     func initialize_deal_data() {
@@ -253,7 +251,6 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         me_filter_btn.selected = true
         
         initialize_deal_data()
-        
         
     }
     
