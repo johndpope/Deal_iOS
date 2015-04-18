@@ -160,15 +160,14 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         
         if sender is UIButton {
-           println ("1")
             if identifier == specific_make_deal_segue_identifier ||  identifier == show_profile_segue_identifier {
-                println ("2")
                 return false
             }
         }
-        println ("3")
         return true
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == specific_make_deal_segue_identifier{
@@ -200,7 +199,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         self.tableView.reloadData()
     }
     
-    
+    var logged_in = false
     
     override func viewDidLoad() {
         // TODO: add real data to all_deals
@@ -219,6 +218,10 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         //tableView.delegate = self
         //tableView.dataSource = self
         me_filter_btn.selected = true
+        
+        if !logged_in {
+            /*self.window!.rootViewController!.performSegueWithIdentifier(login_segue_identifer, sender: nil)*/
+        }
     }
     
     /*

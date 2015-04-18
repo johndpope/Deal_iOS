@@ -16,8 +16,11 @@ class DealDataManager {
     /* Cached version */
     //var deals : [NSManagedObject]
     var deals : [Deal]
+    var deal_users : [String : DealUser]
+    
     init () {
         self.deals = []
+        deal_users = Dictionary<String, DealUser>()
     }
     
     /*func fetchDeals (appDelegate : AppDelegate) {
@@ -43,6 +46,14 @@ class DealDataManager {
     }*/
     
  
+    func find_user (user_id : String) -> DealUser {
+        return deal_users[user_id]!
+    }
+    
+    func add_user (deal_user : DealUser) -> Void {
+        deal_users[deal_user.id] = deal_user
+    }
+    
     
     func getDealForIndex (index : Int) ->Deal {
         //println (String(deals))
