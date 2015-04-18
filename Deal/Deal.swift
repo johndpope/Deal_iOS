@@ -1,5 +1,5 @@
 //
-//  DealModel.swift
+//  Deal.swift
 //  Deal
 //
 //  Created by Ki Suk Jang on 4/16/15.
