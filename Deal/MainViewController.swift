@@ -80,6 +80,36 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         // TODO: populate deals array from disk
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(
+            regionType: AWSRegionType.USEast1, identityPoolId: "us-east-1:554fda00-ce9b-43ec-a01b-d2ee16436ded")
+        
+        let defaultServiceConfiguration = AWSServiceConfiguration(
+            region: AWSRegionType.USEast1, credentialsProvider: credentialsProvider)
+        
+        AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
+        
+        
+        /* get one example */
+        
+        let mapper = AWSDynamoDBObjectMapper.defaultDynamoDBObjectMapper()
+        mapper.load(Deal.self, hashKey: "1", rangeKey: "2") .continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock: { (task:BFTask!) -> AnyObject! in
+            if (task.error == nil) {
+                if (task.result != nil) {
+                    print(task.result)
+                }
+            } else {
+                println("Error: \(task.error)")
+                let alertController = UIAlertController(title: "Failed to get item from table.", message: task.error.description, preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action:UIAlertAction!) -> Void in
+                })
+                alertController.addAction(okAction)
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+            }
+            return nil
+        })
+
     }
     
     
