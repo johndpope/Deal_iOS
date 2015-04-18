@@ -179,8 +179,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let makeDealViewController = segue.destinationViewController as! UIViewController
+
         if segue.identifier == specific_make_deal_segue_identifier{
-            let makeDealViewController = segue.destinationViewController as! UIViewController
             
             
             /*if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
@@ -216,7 +217,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         self.tableView.reloadData()
     }
     
-    var logged_in = false
+    var logged_in = true
     
     /* Testing function. remove later */
     func initialize_deal_data() {
@@ -246,15 +247,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
 
     
     override func viewDidLoad() {
-        // TODO: add real data to all_deals
-        
-        //tableView.delegate = self
-        //tableView.dataSource = self
+       
         me_filter_btn.selected = true
-        
         initialize_deal_data()
-        
-        
     }
     
     /*
