@@ -93,7 +93,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         /* get one example */
         
         let mapper = AWSDynamoDBObjectMapper.defaultDynamoDBObjectMapper()
-        mapper.load(Deal.self, hashKey: "1", rangeKey: "2") .continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock: { (task:BFTask!) -> AnyObject! in
+        mapper.load(User.self, hashKey: "deal@stanford.edu", rangeKey: "2") .continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock: { (task:BFTask!) -> AnyObject! in
             if (task.error == nil) {
                 if (task.result != nil) {
                     print(task.result)

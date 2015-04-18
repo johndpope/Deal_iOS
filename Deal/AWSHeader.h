@@ -17,5 +17,6 @@
 #import <AWSCognito/AWSCognito.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKLoginKit/FBSDKLoginButton.h>
 
 #endif
