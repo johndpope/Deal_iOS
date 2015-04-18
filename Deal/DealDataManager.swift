@@ -10,6 +10,9 @@ import Foundation
 import CoreData
 
 class DealDataManager {
+   
+    
+    
     /* Cached version */
     //var deals : [NSManagedObject]
     var deals : [Deal]

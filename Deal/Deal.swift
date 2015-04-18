@@ -70,4 +70,14 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
             return  FilterType.ME_FILTER_TYPE
         }
     }
+    
+    //required to let DynamoDB Mapper create instances of this class
+    override init(dictionary dictionaryValue: [NSObject : AnyObject]!, error: NSErrorPointer) {
+        super.init(dictionary: dictionaryValue, error: error)
+    }
+    
+    //workaround to possible XCode 6.1 Bug : "Type NotificationAck" does not conform to protocol "NSObjectProtocol"
+    override func isEqual(anObject: AnyObject?) -> Bool {
+        return super.isEqual(anObject)
+    }
 }

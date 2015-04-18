@@ -116,9 +116,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         return cell!
     }
     
-    let show_profile_segue_identifier = "show_profile"
-    let specific_make_deal_segue_identifier = "specific_make_deal"
-    let deal_detail_segue_identifer = "deal_detail"
+
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println ("NOT IMPLEMENTED YET")
@@ -127,8 +125,23 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         let row = indexPath.row
     }
     
+
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        
+        if sender is UIButton {
+           println ("1")
+            if identifier == specific_make_deal_segue_identifier ||  identifier == show_profile_segue_identifier {
+                println ("2")
+                return false
+            }
+        }
+        println ("3")
+        return true
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == self.specific_make_deal_segue_identifier{
+        if segue.identifier == specific_make_deal_segue_identifier{
             let makeDealViewController = segue.destinationViewController as! UIViewController
             
             
@@ -141,9 +154,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
                 let destinationTitle = self.candies[indexPath.row].name
                 candyDetailViewController.title = destinationTitle
             }*/
-        } else if segue.identifier == self.show_profile_segue_identifier {
+        } else if segue.identifier == show_profile_segue_identifier {
             
-        } else if segue.identifier == self.deal_detail_segue_identifer {
+        } else if segue.identifier == deal_detail_segue_identifer {
             
             
         } else {
@@ -156,6 +169,8 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
+    
+    
     
     override func viewDidLoad() {
         // TODO: add real data to all_deals
