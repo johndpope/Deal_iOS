@@ -15,5 +15,7 @@
 #import <AWSDynamoDB/AWSDynamoDBObjectMapper.h>
 #import <AWSDynamoDB/AWSDynamoDBService.h>
 #import <AWSCognito/AWSCognito.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #endif
