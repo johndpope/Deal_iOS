@@ -22,8 +22,7 @@ class DealDataManager {
     
     init () {
         self.deals = []
-        
-        deal_users = Dictionary<String, DealUser>()
+        deal_users = Dictionary<String, User>()
     }
     
     /*func fetchDeals (appDelegate : AppDelegate) {
@@ -49,7 +48,7 @@ class DealDataManager {
     }*/
     
  
-    func find_user (user_id : String) -> DealUser {
+    func find_user (user_id : String) -> User {
         assert (user_id != "", "DealDataManager -> find_user : nil user id")
         return deal_users[user_id]!
     }

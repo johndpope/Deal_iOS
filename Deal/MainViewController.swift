@@ -225,7 +225,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         let user_2 = "2"
         let user_3 = "3"
         
-        let all_users = [DealUser (id: user_1, name: "Do"), DealUser (id: user_2, name: "Brian"), DealUser (id: user_3, name: "Cameron")]
+        let all_users = [User (id: user_1, first_name: "Do", last_name: "Kwon"), User (id: user_2, first_name: "Brian", last_name: "Jang"), User (id: user_3, first_name: "Cameron", last_name: "Lindsay")]
         
         let all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_2),
             Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),

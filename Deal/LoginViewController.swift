@@ -48,9 +48,8 @@ class LoginViewContoller :UIViewController, FBSDKLoginButtonDelegate{
         }
     }
     
-    override func viewDidLoad() {
-        
-        
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        println("User Logged Out")
     }
     
 }

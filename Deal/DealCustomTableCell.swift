@@ -26,9 +26,9 @@ class DealCustomTableCell: UITableViewCell {
         let dealee = appDelegate.deal_data_manager?.find_user(deal.Dealee_Id)
         var r_str = "You "
         if deal.Type != Deal.FilterType.ME_FILTER_TYPE {
-            r_str = dealer!.name + " "
+            r_str = dealer!.First_Name + " "
         }
-        r_str = r_str +  " made a deal with " + dealee!.name
+        r_str = r_str +  " made a deal with " + dealee!.First_Name
         return r_str
     }
     
