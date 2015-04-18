@@ -164,6 +164,15 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
                 return false
             }
         }
+        
+        if identifier == login_segue_identifier {
+            if logged_in {
+                println ("%%%%%%%% Not Logging in !!")
+                return false
+            }
+            ("%%%%%%%% Logging in !!")
+           
+        }
         return true
     }
     
@@ -195,33 +204,57 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func viewDidAppear(animated: Bool) {
+        if (!logged_in)  {
+            //performSegueWithIdentifier (login_segue_identifier, sender:self)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("login_controller_id") as! UIViewController
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
+        
+        
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     
     var logged_in = false
     
-    override func viewDidLoad() {
-        // TODO: add real data to all_deals
-        var all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Pick up grandma", reward: "Get licorice", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE),
-        Deal(task: "Do homework", reward: "Get Xbox", deal_type: Deal.FilterType.ME_FILTER_TYPE),
-        Deal(task: "Practice Piano", reward: "Get stoned", deal_type: Deal.FilterType.FAMILY_FILTER_TYPE),
-        Deal(task: "Practice guitar", reward: "Get game gold", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE)
+    /* Testing function. remove later */
+    func initialize_deal_data() {
+        
+        let user_1 = "1"
+        let user_2 = "2"
+        let user_3 = "3"
+        
+        let all_users = [DealUser (id: user_1, name: "Do"), DealUser (id: user_2, name: "Brian"), DealUser (id: user_3, name: "Cameron")]
+        
+        let all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_2),
+            Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),
+            Deal(task: "Pick up grandma", reward: "Get licorice", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE, dealer_id : user_2, dealee_id : user_3),
+            Deal(task: "Do homework", reward: "Get Xbox", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),
+            Deal(task: "Practice Piano", reward: "Get stoned", deal_type: Deal.FilterType.FAMILY_FILTER_TYPE, dealer_id : user_3, dealee_id : user_2),
+            Deal(task: "Practice guitar", reward: "Get game gold", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE, dealer_id : user_2, dealee_id : user_3)
         ]
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         for deal in all_deals {
             appDelegate.deal_data_manager!.saveDeal(deal)
         }
         
+        for user in all_users {
+            appDelegate.deal_data_manager!.add_user(user)
+        }
+    }
+
+    
+    override func viewDidLoad() {
+        // TODO: add real data to all_deals
+        
         //tableView.delegate = self
         //tableView.dataSource = self
         me_filter_btn.selected = true
         
-        if !logged_in {
-            /*self.window!.rootViewController!.performSegueWithIdentifier(login_segue_identifer, sender: nil)*/
-        }
+        initialize_deal_data()
+        
+        
     }
     
     /*
