@@ -26,12 +26,17 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     override init!() { super.init() }
     
-    init (task : String, reward :String, deal_type: FilterType) {
+    init (task : String, reward :String, deal_type: FilterType, dealer_id : String, dealee_id : String) {
         super.init()
         self.Task = task
         self.Reward = reward
         self.Complete = false
         self.Type = deal_type
+        
+        self.Dealer_Id = dealer_id
+        self.Dealee_Id = dealee_id
+        self.Deal_Id = ""
+        //super.init()
     }
     
     required init!(coder: NSCoder!) {

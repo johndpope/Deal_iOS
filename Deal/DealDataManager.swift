@@ -12,6 +12,8 @@ import CoreData
 class DealDataManager {
    
     
+    //var cur_user : DealUser
+    
     
     /* Cached version */
     //var deals : [NSManagedObject]
@@ -47,6 +49,7 @@ class DealDataManager {
     
  
     func find_user (user_id : String) -> User {
+        assert (user_id != "", "DealDataManager -> find_user : nil user id")
         return deal_users[user_id]!
     }
     

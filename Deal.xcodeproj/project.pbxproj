@@ -9,6 +9,50 @@
 /* Begin PBXBuildFile section */
 		1B21B7601AE1DAD9004931C6 /* DealConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21B75F1AE1DAD9004931C6 /* DealConstants.swift */; };
 		1B2230541AE213A20082CF32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2230531AE213A20082CF32 /* LoginViewController.swift */; };
+		1B2230691AE233D50082CF32 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230571AE233D50082CF32 /* AWSAutoScaling.framework */; };
+		1B22306A1AE233D50082CF32 /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230581AE233D50082CF32 /* AWSCloudWatch.framework */; };
+		1B22306B1AE233D50082CF32 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230591AE233D50082CF32 /* AWSCognito.framework */; };
+		1B22306C1AE233D50082CF32 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305A1AE233D50082CF32 /* AWSCore.framework */; };
+		1B22306D1AE233D50082CF32 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305B1AE233D50082CF32 /* AWSDynamoDB.framework */; };
+		1B22306E1AE233D50082CF32 /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305C1AE233D50082CF32 /* AWSEC2.framework */; };
+		1B22306F1AE233D50082CF32 /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305D1AE233D50082CF32 /* AWSElasticLoadBalancing.framework */; };
+		1B2230701AE233D50082CF32 /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305E1AE233D50082CF32 /* AWSKinesis.framework */; };
+		1B2230711AE233D50082CF32 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22305F1AE233D50082CF32 /* AWSLambda.framework */; };
+		1B2230721AE233D50082CF32 /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230601AE233D50082CF32 /* AWSMachineLearning.framework */; };
+		1B2230731AE233D50082CF32 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230611AE233D50082CF32 /* AWSS3.framework */; };
+		1B2230741AE233D60082CF32 /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230621AE233D50082CF32 /* AWSSES.framework */; };
+		1B2230751AE233D60082CF32 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230631AE233D50082CF32 /* AWSSimpleDB.framework */; };
+		1B2230761AE233D60082CF32 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230641AE233D50082CF32 /* AWSSNS.framework */; };
+		1B2230771AE233D60082CF32 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230651AE233D50082CF32 /* AWSSQS.framework */; };
+		1B2230781AE233D60082CF32 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230661AE233D50082CF32 /* Bolts.framework */; };
+		1B2230791AE233D60082CF32 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230671AE233D50082CF32 /* FBAudienceNetwork.framework */; };
+		1B22307A1AE233D60082CF32 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230681AE233D50082CF32 /* FBSDKCoreKit.framework */; };
+		1B2230841AE233F00082CF32 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22307B1AE233EF0082CF32 /* FBSDKLoginKit.framework */; };
+		1B2230851AE233F00082CF32 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22307C1AE233EF0082CF32 /* FBSDKShareKit.framework */; };
+		1B2230861AE233F00082CF32 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22307D1AE233EF0082CF32 /* FMDB.framework */; };
+		1B2230871AE233F00082CF32 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22307E1AE233EF0082CF32 /* GZIP.framework */; };
+		1B2230881AE233F00082CF32 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B22307F1AE233EF0082CF32 /* Mantle.framework */; };
+		1B2230891AE233F00082CF32 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230801AE233EF0082CF32 /* Reachability.framework */; };
+		1B22308A1AE233F00082CF32 /* TMCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230811AE233F00082CF32 /* TMCache.framework */; };
+		1B22308B1AE233F00082CF32 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230821AE233F00082CF32 /* UICKeyChainStore.framework */; };
+		1B22308C1AE233F00082CF32 /* XMLDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2230831AE233F00082CF32 /* XMLDictionary.framework */; };
+		1B22309E1AE234260082CF32 /* autoscaling-2011-01-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22308D1AE234260082CF32 /* autoscaling-2011-01-01.json */; };
+		1B22309F1AE234260082CF32 /* cognito-identity-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22308E1AE234260082CF32 /* cognito-identity-2014-06-30.json */; };
+		1B2230A01AE234260082CF32 /* cognito-sync-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22308F1AE234260082CF32 /* cognito-sync-2014-06-30.json */; };
+		1B2230A11AE234260082CF32 /* dynamodb-2012-08-10.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230901AE234260082CF32 /* dynamodb-2012-08-10.json */; };
+		1B2230A21AE234260082CF32 /* ec2-2014-09-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230911AE234260082CF32 /* ec2-2014-09-01.json */; };
+		1B2230A31AE234260082CF32 /* elasticloadbalancing-2012-06-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230921AE234260082CF32 /* elasticloadbalancing-2012-06-01.json */; };
+		1B2230A41AE234260082CF32 /* email-2010-12-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230931AE234260082CF32 /* email-2010-12-01.json */; };
+		1B2230A51AE234260082CF32 /* kinesis-2013-12-02.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230941AE234260082CF32 /* kinesis-2013-12-02.json */; };
+		1B2230A61AE234260082CF32 /* lambda-2015-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230951AE234260082CF32 /* lambda-2015-03-31.json */; };
+		1B2230A71AE234260082CF32 /* machinelearning-2014-12-12.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230961AE234260082CF32 /* machinelearning-2014-12-12.json */; };
+		1B2230A81AE234260082CF32 /* mobileanalytics-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230971AE234260082CF32 /* mobileanalytics-2014-06-30.json */; };
+		1B2230A91AE234260082CF32 /* monitoring-2010-08-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230981AE234260082CF32 /* monitoring-2010-08-01.json */; };
+		1B2230AA1AE234260082CF32 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2230991AE234260082CF32 /* s3-2006-03-01.json */; };
+		1B2230AB1AE234260082CF32 /* sdb-2009-04-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22309A1AE234260082CF32 /* sdb-2009-04-15.json */; };
+		1B2230AC1AE234260082CF32 /* sns-2010-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22309B1AE234260082CF32 /* sns-2010-03-31.json */; };
+		1B2230AD1AE234260082CF32 /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22309C1AE234260082CF32 /* sqs-2012-11-05.json */; };
+		1B2230AE1AE234260082CF32 /* sts-2011-06-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B22309D1AE234260082CF32 /* sts-2011-06-15.json */; };
 		1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */; };
 		1B865A0F1AE038480054208C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B865A0E1AE038480054208C /* ProfileViewController.swift */; };
 		1B865A411AE18FA30054208C /* DealData.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 1BBF40A21ADFBBC500B2082B /* DealData.xcdatamodeld */; };
@@ -28,50 +72,6 @@
 		95A6E9961AE1B27300F23DA6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */; };
 		95A6E9981AE1B27900F23DA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9971AE1B27900F23DA6 /* libz.dylib */; };
 		95A6E99A1AE1B28000F23DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */; };
-		95A6E9B51AE21D0000F23DA6 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9A71AE21D0000F23DA6 /* AWSAutoScaling.framework */; };
-		95A6E9B61AE21D0000F23DA6 /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9A81AE21D0000F23DA6 /* AWSCloudWatch.framework */; };
-		95A6E9B71AE21D0000F23DA6 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9A91AE21D0000F23DA6 /* AWSCore.framework */; };
-		95A6E9B81AE21D0000F23DA6 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AA1AE21D0000F23DA6 /* AWSDynamoDB.framework */; };
-		95A6E9B91AE21D0000F23DA6 /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AB1AE21D0000F23DA6 /* AWSEC2.framework */; };
-		95A6E9BA1AE21D0000F23DA6 /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AC1AE21D0000F23DA6 /* AWSElasticLoadBalancing.framework */; };
-		95A6E9BB1AE21D0000F23DA6 /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AD1AE21D0000F23DA6 /* AWSKinesis.framework */; };
-		95A6E9BC1AE21D0000F23DA6 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AE1AE21D0000F23DA6 /* AWSLambda.framework */; };
-		95A6E9BD1AE21D0000F23DA6 /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9AF1AE21D0000F23DA6 /* AWSMachineLearning.framework */; };
-		95A6E9BE1AE21D0000F23DA6 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9B01AE21D0000F23DA6 /* AWSS3.framework */; };
-		95A6E9BF1AE21D0000F23DA6 /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9B11AE21D0000F23DA6 /* AWSSES.framework */; };
-		95A6E9C01AE21D0000F23DA6 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9B21AE21D0000F23DA6 /* AWSSimpleDB.framework */; };
-		95A6E9C11AE21D0000F23DA6 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9B31AE21D0000F23DA6 /* AWSSNS.framework */; };
-		95A6E9C21AE21D0000F23DA6 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9B41AE21D0000F23DA6 /* AWSSQS.framework */; };
-		95A6E9C41AE21D0D00F23DA6 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C31AE21D0D00F23DA6 /* AWSCognito.framework */; };
-		95A6E9CD1AE21D1C00F23DA6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C51AE21D1C00F23DA6 /* Bolts.framework */; };
-		95A6E9CE1AE21D1C00F23DA6 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C61AE21D1C00F23DA6 /* FMDB.framework */; };
-		95A6E9CF1AE21D1C00F23DA6 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C71AE21D1C00F23DA6 /* GZIP.framework */; };
-		95A6E9D01AE21D1C00F23DA6 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C81AE21D1C00F23DA6 /* Mantle.framework */; };
-		95A6E9D11AE21D1C00F23DA6 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9C91AE21D1C00F23DA6 /* Reachability.framework */; };
-		95A6E9D21AE21D1C00F23DA6 /* TMCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9CA1AE21D1C00F23DA6 /* TMCache.framework */; };
-		95A6E9D31AE21D1C00F23DA6 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9CB1AE21D1C00F23DA6 /* UICKeyChainStore.framework */; };
-		95A6E9D41AE21D1C00F23DA6 /* XMLDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9CC1AE21D1C00F23DA6 /* XMLDictionary.framework */; };
-		95A6E9D91AE21D3600F23DA6 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9D51AE21D3600F23DA6 /* FBAudienceNetwork.framework */; };
-		95A6E9DA1AE21D3600F23DA6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9D61AE21D3600F23DA6 /* FBSDKCoreKit.framework */; };
-		95A6E9DB1AE21D3600F23DA6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9D71AE21D3600F23DA6 /* FBSDKLoginKit.framework */; };
-		95A6E9DC1AE21D3600F23DA6 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9D81AE21D3600F23DA6 /* FBSDKShareKit.framework */; };
-		95A6E9EE1AE21D8100F23DA6 /* autoscaling-2011-01-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9DD1AE21D8100F23DA6 /* autoscaling-2011-01-01.json */; };
-		95A6E9EF1AE21D8100F23DA6 /* cognito-identity-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9DE1AE21D8100F23DA6 /* cognito-identity-2014-06-30.json */; };
-		95A6E9F01AE21D8100F23DA6 /* cognito-sync-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9DF1AE21D8100F23DA6 /* cognito-sync-2014-06-30.json */; };
-		95A6E9F11AE21D8100F23DA6 /* dynamodb-2012-08-10.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E01AE21D8100F23DA6 /* dynamodb-2012-08-10.json */; };
-		95A6E9F21AE21D8100F23DA6 /* ec2-2014-09-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E11AE21D8100F23DA6 /* ec2-2014-09-01.json */; };
-		95A6E9F31AE21D8100F23DA6 /* elasticloadbalancing-2012-06-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E21AE21D8100F23DA6 /* elasticloadbalancing-2012-06-01.json */; };
-		95A6E9F41AE21D8100F23DA6 /* email-2010-12-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E31AE21D8100F23DA6 /* email-2010-12-01.json */; };
-		95A6E9F51AE21D8100F23DA6 /* kinesis-2013-12-02.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E41AE21D8100F23DA6 /* kinesis-2013-12-02.json */; };
-		95A6E9F61AE21D8100F23DA6 /* lambda-2015-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E51AE21D8100F23DA6 /* lambda-2015-03-31.json */; };
-		95A6E9F71AE21D8100F23DA6 /* machinelearning-2014-12-12.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E61AE21D8100F23DA6 /* machinelearning-2014-12-12.json */; };
-		95A6E9F81AE21D8100F23DA6 /* mobileanalytics-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E71AE21D8100F23DA6 /* mobileanalytics-2014-06-30.json */; };
-		95A6E9F91AE21D8100F23DA6 /* monitoring-2010-08-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E81AE21D8100F23DA6 /* monitoring-2010-08-01.json */; };
-		95A6E9FA1AE21D8100F23DA6 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9E91AE21D8100F23DA6 /* s3-2006-03-01.json */; };
-		95A6E9FB1AE21D8100F23DA6 /* sdb-2009-04-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9EA1AE21D8100F23DA6 /* sdb-2009-04-15.json */; };
-		95A6E9FC1AE21D8100F23DA6 /* sns-2010-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9EB1AE21D8100F23DA6 /* sns-2010-03-31.json */; };
-		95A6E9FD1AE21D8100F23DA6 /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9EC1AE21D8100F23DA6 /* sqs-2012-11-05.json */; };
-		95A6E9FE1AE21D8100F23DA6 /* sts-2011-06-15.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A6E9ED1AE21D8100F23DA6 /* sts-2011-06-15.json */; };
 		95A6EA001AE2284300F23DA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6E9FF1AE2284300F23DA6 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +88,50 @@
 /* Begin PBXFileReference section */
 		1B21B75F1AE1DAD9004931C6 /* DealConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealConstants.swift; sourceTree = "<group>"; };
 		1B2230531AE213A20082CF32 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B2230571AE233D50082CF32 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAutoScaling.framework; path = frameworks/AWSAutoScaling.framework; sourceTree = "<group>"; };
+		1B2230581AE233D50082CF32 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCloudWatch.framework; path = frameworks/AWSCloudWatch.framework; sourceTree = "<group>"; };
+		1B2230591AE233D50082CF32 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = frameworks/AWSCognito.framework; sourceTree = "<group>"; };
+		1B22305A1AE233D50082CF32 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = frameworks/AWSCore.framework; sourceTree = "<group>"; };
+		1B22305B1AE233D50082CF32 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = frameworks/AWSDynamoDB.framework; sourceTree = "<group>"; };
+		1B22305C1AE233D50082CF32 /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSEC2.framework; path = frameworks/AWSEC2.framework; sourceTree = "<group>"; };
+		1B22305D1AE233D50082CF32 /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSElasticLoadBalancing.framework; path = frameworks/AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
+		1B22305E1AE233D50082CF32 /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSKinesis.framework; path = frameworks/AWSKinesis.framework; sourceTree = "<group>"; };
+		1B22305F1AE233D50082CF32 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = frameworks/AWSLambda.framework; sourceTree = "<group>"; };
+		1B2230601AE233D50082CF32 /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMachineLearning.framework; path = frameworks/AWSMachineLearning.framework; sourceTree = "<group>"; };
+		1B2230611AE233D50082CF32 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		1B2230621AE233D50082CF32 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSES.framework; path = frameworks/AWSSES.framework; sourceTree = "<group>"; };
+		1B2230631AE233D50082CF32 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSimpleDB.framework; path = frameworks/AWSSimpleDB.framework; sourceTree = "<group>"; };
+		1B2230641AE233D50082CF32 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = frameworks/AWSSNS.framework; sourceTree = "<group>"; };
+		1B2230651AE233D50082CF32 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSQS.framework; path = frameworks/AWSSQS.framework; sourceTree = "<group>"; };
+		1B2230661AE233D50082CF32 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = frameworks/Bolts.framework; sourceTree = "<group>"; };
+		1B2230671AE233D50082CF32 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = frameworks/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		1B2230681AE233D50082CF32 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1B22307B1AE233EF0082CF32 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = frameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1B22307C1AE233EF0082CF32 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = frameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		1B22307D1AE233EF0082CF32 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = frameworks/FMDB.framework; sourceTree = "<group>"; };
+		1B22307E1AE233EF0082CF32 /* GZIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GZIP.framework; path = frameworks/GZIP.framework; sourceTree = "<group>"; };
+		1B22307F1AE233EF0082CF32 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = frameworks/Mantle.framework; sourceTree = "<group>"; };
+		1B2230801AE233EF0082CF32 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = frameworks/Reachability.framework; sourceTree = "<group>"; };
+		1B2230811AE233F00082CF32 /* TMCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMCache.framework; path = frameworks/TMCache.framework; sourceTree = "<group>"; };
+		1B2230821AE233F00082CF32 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = frameworks/UICKeyChainStore.framework; sourceTree = "<group>"; };
+		1B2230831AE233F00082CF32 /* XMLDictionary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLDictionary.framework; path = frameworks/XMLDictionary.framework; sourceTree = "<group>"; };
+		1B22308D1AE234260082CF32 /* autoscaling-2011-01-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "autoscaling-2011-01-01.json"; path = "frameworks/autoscaling-2011-01-01.json"; sourceTree = "<group>"; };
+		1B22308E1AE234260082CF32 /* cognito-identity-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "cognito-identity-2014-06-30.json"; path = "frameworks/cognito-identity-2014-06-30.json"; sourceTree = "<group>"; };
+		1B22308F1AE234260082CF32 /* cognito-sync-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "cognito-sync-2014-06-30.json"; path = "frameworks/cognito-sync-2014-06-30.json"; sourceTree = "<group>"; };
+		1B2230901AE234260082CF32 /* dynamodb-2012-08-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "dynamodb-2012-08-10.json"; path = "frameworks/dynamodb-2012-08-10.json"; sourceTree = "<group>"; };
+		1B2230911AE234260082CF32 /* ec2-2014-09-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ec2-2014-09-01.json"; path = "frameworks/ec2-2014-09-01.json"; sourceTree = "<group>"; };
+		1B2230921AE234260082CF32 /* elasticloadbalancing-2012-06-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "elasticloadbalancing-2012-06-01.json"; path = "frameworks/elasticloadbalancing-2012-06-01.json"; sourceTree = "<group>"; };
+		1B2230931AE234260082CF32 /* email-2010-12-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "email-2010-12-01.json"; path = "frameworks/email-2010-12-01.json"; sourceTree = "<group>"; };
+		1B2230941AE234260082CF32 /* kinesis-2013-12-02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "kinesis-2013-12-02.json"; path = "frameworks/kinesis-2013-12-02.json"; sourceTree = "<group>"; };
+		1B2230951AE234260082CF32 /* lambda-2015-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "lambda-2015-03-31.json"; path = "frameworks/lambda-2015-03-31.json"; sourceTree = "<group>"; };
+		1B2230961AE234260082CF32 /* machinelearning-2014-12-12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "machinelearning-2014-12-12.json"; path = "frameworks/machinelearning-2014-12-12.json"; sourceTree = "<group>"; };
+		1B2230971AE234260082CF32 /* mobileanalytics-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "mobileanalytics-2014-06-30.json"; path = "frameworks/mobileanalytics-2014-06-30.json"; sourceTree = "<group>"; };
+		1B2230981AE234260082CF32 /* monitoring-2010-08-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "monitoring-2010-08-01.json"; path = "frameworks/monitoring-2010-08-01.json"; sourceTree = "<group>"; };
+		1B2230991AE234260082CF32 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "s3-2006-03-01.json"; path = "frameworks/s3-2006-03-01.json"; sourceTree = "<group>"; };
+		1B22309A1AE234260082CF32 /* sdb-2009-04-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sdb-2009-04-15.json"; path = "frameworks/sdb-2009-04-15.json"; sourceTree = "<group>"; };
+		1B22309B1AE234260082CF32 /* sns-2010-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sns-2010-03-31.json"; path = "frameworks/sns-2010-03-31.json"; sourceTree = "<group>"; };
+		1B22309C1AE234260082CF32 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sqs-2012-11-05.json"; path = "frameworks/sqs-2012-11-05.json"; sourceTree = "<group>"; };
+		1B22309D1AE234260082CF32 /* sts-2011-06-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sts-2011-06-15.json"; path = "frameworks/sts-2011-06-15.json"; sourceTree = "<group>"; };
 		1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCreateViewController.swift; sourceTree = "<group>"; };
 		1B865A0E1AE038480054208C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -111,50 +155,6 @@
 		95A6E9971AE1B27900F23DA6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		95A6E99C1AE1B34F00F23DA6 /* AWSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSHeader.h; sourceTree = "<group>"; };
-		95A6E9A71AE21D0000F23DA6 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAutoScaling.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSAutoScaling.framework"; sourceTree = "<group>"; };
-		95A6E9A81AE21D0000F23DA6 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCloudWatch.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSCloudWatch.framework"; sourceTree = "<group>"; };
-		95A6E9A91AE21D0000F23DA6 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
-		95A6E9AA1AE21D0000F23DA6 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSDynamoDB.framework"; sourceTree = "<group>"; };
-		95A6E9AB1AE21D0000F23DA6 /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSEC2.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSEC2.framework"; sourceTree = "<group>"; };
-		95A6E9AC1AE21D0000F23DA6 /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSElasticLoadBalancing.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSElasticLoadBalancing.framework"; sourceTree = "<group>"; };
-		95A6E9AD1AE21D0000F23DA6 /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSKinesis.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSKinesis.framework"; sourceTree = "<group>"; };
-		95A6E9AE1AE21D0000F23DA6 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSLambda.framework"; sourceTree = "<group>"; };
-		95A6E9AF1AE21D0000F23DA6 /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMachineLearning.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSMachineLearning.framework"; sourceTree = "<group>"; };
-		95A6E9B01AE21D0000F23DA6 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
-		95A6E9B11AE21D0000F23DA6 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSES.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSSES.framework"; sourceTree = "<group>"; };
-		95A6E9B21AE21D0000F23DA6 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSimpleDB.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSSimpleDB.framework"; sourceTree = "<group>"; };
-		95A6E9B31AE21D0000F23DA6 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSSNS.framework"; sourceTree = "<group>"; };
-		95A6E9B41AE21D0000F23DA6 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSQS.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/AWSSQS.framework"; sourceTree = "<group>"; };
-		95A6E9C31AE21D0D00F23DA6 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
-		95A6E9C51AE21D1C00F23DA6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/Bolts.framework"; sourceTree = "<group>"; };
-		95A6E9C61AE21D1C00F23DA6 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/FMDB.framework"; sourceTree = "<group>"; };
-		95A6E9C71AE21D1C00F23DA6 /* GZIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GZIP.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/GZIP.framework"; sourceTree = "<group>"; };
-		95A6E9C81AE21D1C00F23DA6 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/Mantle.framework"; sourceTree = "<group>"; };
-		95A6E9C91AE21D1C00F23DA6 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/Reachability.framework"; sourceTree = "<group>"; };
-		95A6E9CA1AE21D1C00F23DA6 /* TMCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TMCache.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/TMCache.framework"; sourceTree = "<group>"; };
-		95A6E9CB1AE21D1C00F23DA6 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/UICKeyChainStore.framework"; sourceTree = "<group>"; };
-		95A6E9CC1AE21D1C00F23DA6 /* XMLDictionary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLDictionary.framework; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/third-party/XMLDictionary.framework"; sourceTree = "<group>"; };
-		95A6E9D51AE21D3600F23DA6 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = ../../../../../Documents/FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		95A6E9D61AE21D3600F23DA6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		95A6E9D71AE21D3600F23DA6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		95A6E9D81AE21D3600F23DA6 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		95A6E9DD1AE21D8100F23DA6 /* autoscaling-2011-01-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "autoscaling-2011-01-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/autoscaling-2011-01-01.json"; sourceTree = "<group>"; };
-		95A6E9DE1AE21D8100F23DA6 /* cognito-identity-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "cognito-identity-2014-06-30.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/cognito-identity-2014-06-30.json"; sourceTree = "<group>"; };
-		95A6E9DF1AE21D8100F23DA6 /* cognito-sync-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "cognito-sync-2014-06-30.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/cognito-sync-2014-06-30.json"; sourceTree = "<group>"; };
-		95A6E9E01AE21D8100F23DA6 /* dynamodb-2012-08-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "dynamodb-2012-08-10.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/dynamodb-2012-08-10.json"; sourceTree = "<group>"; };
-		95A6E9E11AE21D8100F23DA6 /* ec2-2014-09-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ec2-2014-09-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/ec2-2014-09-01.json"; sourceTree = "<group>"; };
-		95A6E9E21AE21D8100F23DA6 /* elasticloadbalancing-2012-06-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "elasticloadbalancing-2012-06-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/elasticloadbalancing-2012-06-01.json"; sourceTree = "<group>"; };
-		95A6E9E31AE21D8100F23DA6 /* email-2010-12-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "email-2010-12-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/email-2010-12-01.json"; sourceTree = "<group>"; };
-		95A6E9E41AE21D8100F23DA6 /* kinesis-2013-12-02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "kinesis-2013-12-02.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/kinesis-2013-12-02.json"; sourceTree = "<group>"; };
-		95A6E9E51AE21D8100F23DA6 /* lambda-2015-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "lambda-2015-03-31.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/lambda-2015-03-31.json"; sourceTree = "<group>"; };
-		95A6E9E61AE21D8100F23DA6 /* machinelearning-2014-12-12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "machinelearning-2014-12-12.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/machinelearning-2014-12-12.json"; sourceTree = "<group>"; };
-		95A6E9E71AE21D8100F23DA6 /* mobileanalytics-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "mobileanalytics-2014-06-30.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/mobileanalytics-2014-06-30.json"; sourceTree = "<group>"; };
-		95A6E9E81AE21D8100F23DA6 /* monitoring-2010-08-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "monitoring-2010-08-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/monitoring-2010-08-01.json"; sourceTree = "<group>"; };
-		95A6E9E91AE21D8100F23DA6 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "s3-2006-03-01.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/s3-2006-03-01.json"; sourceTree = "<group>"; };
-		95A6E9EA1AE21D8100F23DA6 /* sdb-2009-04-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sdb-2009-04-15.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/sdb-2009-04-15.json"; sourceTree = "<group>"; };
-		95A6E9EB1AE21D8100F23DA6 /* sns-2010-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sns-2010-03-31.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/sns-2010-03-31.json"; sourceTree = "<group>"; };
-		95A6E9EC1AE21D8100F23DA6 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sqs-2012-11-05.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/sqs-2012-11-05.json"; sourceTree = "<group>"; };
-		95A6E9ED1AE21D8100F23DA6 /* sts-2011-06-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "sts-2011-06-15.json"; path = "../../../../../Downloads/aws-ios-sdk-2.1.1/service-definitions/sts-2011-06-15.json"; sourceTree = "<group>"; };
 		95A6E9FF1AE2284300F23DA6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,33 +163,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95A6E9D91AE21D3600F23DA6 /* FBAudienceNetwork.framework in Frameworks */,
-				95A6E9DA1AE21D3600F23DA6 /* FBSDKCoreKit.framework in Frameworks */,
-				95A6E9DB1AE21D3600F23DA6 /* FBSDKLoginKit.framework in Frameworks */,
-				95A6E9DC1AE21D3600F23DA6 /* FBSDKShareKit.framework in Frameworks */,
-				95A6E9CD1AE21D1C00F23DA6 /* Bolts.framework in Frameworks */,
-				95A6E9CE1AE21D1C00F23DA6 /* FMDB.framework in Frameworks */,
-				95A6E9CF1AE21D1C00F23DA6 /* GZIP.framework in Frameworks */,
-				95A6E9D01AE21D1C00F23DA6 /* Mantle.framework in Frameworks */,
-				95A6E9D11AE21D1C00F23DA6 /* Reachability.framework in Frameworks */,
-				95A6E9D21AE21D1C00F23DA6 /* TMCache.framework in Frameworks */,
-				95A6E9D31AE21D1C00F23DA6 /* UICKeyChainStore.framework in Frameworks */,
-				95A6E9D41AE21D1C00F23DA6 /* XMLDictionary.framework in Frameworks */,
-				95A6E9C41AE21D0D00F23DA6 /* AWSCognito.framework in Frameworks */,
-				95A6E9B51AE21D0000F23DA6 /* AWSAutoScaling.framework in Frameworks */,
-				95A6E9B61AE21D0000F23DA6 /* AWSCloudWatch.framework in Frameworks */,
-				95A6E9B71AE21D0000F23DA6 /* AWSCore.framework in Frameworks */,
-				95A6E9B81AE21D0000F23DA6 /* AWSDynamoDB.framework in Frameworks */,
-				95A6E9B91AE21D0000F23DA6 /* AWSEC2.framework in Frameworks */,
-				95A6E9BA1AE21D0000F23DA6 /* AWSElasticLoadBalancing.framework in Frameworks */,
-				95A6E9BB1AE21D0000F23DA6 /* AWSKinesis.framework in Frameworks */,
-				95A6E9BC1AE21D0000F23DA6 /* AWSLambda.framework in Frameworks */,
-				95A6E9BD1AE21D0000F23DA6 /* AWSMachineLearning.framework in Frameworks */,
-				95A6E9BE1AE21D0000F23DA6 /* AWSS3.framework in Frameworks */,
-				95A6E9BF1AE21D0000F23DA6 /* AWSSES.framework in Frameworks */,
-				95A6E9C01AE21D0000F23DA6 /* AWSSimpleDB.framework in Frameworks */,
-				95A6E9C11AE21D0000F23DA6 /* AWSSNS.framework in Frameworks */,
-				95A6E9C21AE21D0000F23DA6 /* AWSSQS.framework in Frameworks */,
+				1B2230841AE233F00082CF32 /* FBSDKLoginKit.framework in Frameworks */,
+				1B2230851AE233F00082CF32 /* FBSDKShareKit.framework in Frameworks */,
+				1B2230861AE233F00082CF32 /* FMDB.framework in Frameworks */,
+				1B2230871AE233F00082CF32 /* GZIP.framework in Frameworks */,
+				1B2230881AE233F00082CF32 /* Mantle.framework in Frameworks */,
+				1B2230891AE233F00082CF32 /* Reachability.framework in Frameworks */,
+				1B22308A1AE233F00082CF32 /* TMCache.framework in Frameworks */,
+				1B22308B1AE233F00082CF32 /* UICKeyChainStore.framework in Frameworks */,
+				1B22308C1AE233F00082CF32 /* XMLDictionary.framework in Frameworks */,
+				1B2230691AE233D50082CF32 /* AWSAutoScaling.framework in Frameworks */,
+				1B22306A1AE233D50082CF32 /* AWSCloudWatch.framework in Frameworks */,
+				1B22306B1AE233D50082CF32 /* AWSCognito.framework in Frameworks */,
+				1B22306C1AE233D50082CF32 /* AWSCore.framework in Frameworks */,
+				1B22306D1AE233D50082CF32 /* AWSDynamoDB.framework in Frameworks */,
+				1B22306E1AE233D50082CF32 /* AWSEC2.framework in Frameworks */,
+				1B22306F1AE233D50082CF32 /* AWSElasticLoadBalancing.framework in Frameworks */,
+				1B2230701AE233D50082CF32 /* AWSKinesis.framework in Frameworks */,
+				1B2230711AE233D50082CF32 /* AWSLambda.framework in Frameworks */,
+				1B2230721AE233D50082CF32 /* AWSMachineLearning.framework in Frameworks */,
+				1B2230731AE233D50082CF32 /* AWSS3.framework in Frameworks */,
+				1B2230741AE233D60082CF32 /* AWSSES.framework in Frameworks */,
+				1B2230751AE233D60082CF32 /* AWSSimpleDB.framework in Frameworks */,
+				1B2230761AE233D60082CF32 /* AWSSNS.framework in Frameworks */,
+				1B2230771AE233D60082CF32 /* AWSSQS.framework in Frameworks */,
+				1B2230781AE233D60082CF32 /* Bolts.framework in Frameworks */,
+				1B2230791AE233D60082CF32 /* FBAudienceNetwork.framework in Frameworks */,
+				1B22307A1AE233D60082CF32 /* FBSDKCoreKit.framework in Frameworks */,
 				95A6E99A1AE1B28000F23DA6 /* SystemConfiguration.framework in Frameworks */,
 				95A6E9981AE1B27900F23DA6 /* libz.dylib in Frameworks */,
 				95A6E9961AE1B27300F23DA6 /* libsqlite3.dylib in Frameworks */,
@@ -209,50 +209,50 @@
 		1BDBF2C61ABEAB5100A0C45D = {
 			isa = PBXGroup;
 			children = (
-				95A6E9DD1AE21D8100F23DA6 /* autoscaling-2011-01-01.json */,
-				95A6E9DE1AE21D8100F23DA6 /* cognito-identity-2014-06-30.json */,
-				95A6E9DF1AE21D8100F23DA6 /* cognito-sync-2014-06-30.json */,
-				95A6E9E01AE21D8100F23DA6 /* dynamodb-2012-08-10.json */,
-				95A6E9E11AE21D8100F23DA6 /* ec2-2014-09-01.json */,
-				95A6E9E21AE21D8100F23DA6 /* elasticloadbalancing-2012-06-01.json */,
-				95A6E9E31AE21D8100F23DA6 /* email-2010-12-01.json */,
-				95A6E9E41AE21D8100F23DA6 /* kinesis-2013-12-02.json */,
-				95A6E9E51AE21D8100F23DA6 /* lambda-2015-03-31.json */,
-				95A6E9E61AE21D8100F23DA6 /* machinelearning-2014-12-12.json */,
-				95A6E9E71AE21D8100F23DA6 /* mobileanalytics-2014-06-30.json */,
-				95A6E9E81AE21D8100F23DA6 /* monitoring-2010-08-01.json */,
-				95A6E9E91AE21D8100F23DA6 /* s3-2006-03-01.json */,
-				95A6E9EA1AE21D8100F23DA6 /* sdb-2009-04-15.json */,
-				95A6E9EB1AE21D8100F23DA6 /* sns-2010-03-31.json */,
-				95A6E9EC1AE21D8100F23DA6 /* sqs-2012-11-05.json */,
-				95A6E9ED1AE21D8100F23DA6 /* sts-2011-06-15.json */,
-				95A6E9D51AE21D3600F23DA6 /* FBAudienceNetwork.framework */,
-				95A6E9D61AE21D3600F23DA6 /* FBSDKCoreKit.framework */,
-				95A6E9D71AE21D3600F23DA6 /* FBSDKLoginKit.framework */,
-				95A6E9D81AE21D3600F23DA6 /* FBSDKShareKit.framework */,
-				95A6E9C51AE21D1C00F23DA6 /* Bolts.framework */,
-				95A6E9C61AE21D1C00F23DA6 /* FMDB.framework */,
-				95A6E9C71AE21D1C00F23DA6 /* GZIP.framework */,
-				95A6E9C81AE21D1C00F23DA6 /* Mantle.framework */,
-				95A6E9C91AE21D1C00F23DA6 /* Reachability.framework */,
-				95A6E9CA1AE21D1C00F23DA6 /* TMCache.framework */,
-				95A6E9CB1AE21D1C00F23DA6 /* UICKeyChainStore.framework */,
-				95A6E9CC1AE21D1C00F23DA6 /* XMLDictionary.framework */,
-				95A6E9C31AE21D0D00F23DA6 /* AWSCognito.framework */,
-				95A6E9A71AE21D0000F23DA6 /* AWSAutoScaling.framework */,
-				95A6E9A81AE21D0000F23DA6 /* AWSCloudWatch.framework */,
-				95A6E9A91AE21D0000F23DA6 /* AWSCore.framework */,
-				95A6E9AA1AE21D0000F23DA6 /* AWSDynamoDB.framework */,
-				95A6E9AB1AE21D0000F23DA6 /* AWSEC2.framework */,
-				95A6E9AC1AE21D0000F23DA6 /* AWSElasticLoadBalancing.framework */,
-				95A6E9AD1AE21D0000F23DA6 /* AWSKinesis.framework */,
-				95A6E9AE1AE21D0000F23DA6 /* AWSLambda.framework */,
-				95A6E9AF1AE21D0000F23DA6 /* AWSMachineLearning.framework */,
-				95A6E9B01AE21D0000F23DA6 /* AWSS3.framework */,
-				95A6E9B11AE21D0000F23DA6 /* AWSSES.framework */,
-				95A6E9B21AE21D0000F23DA6 /* AWSSimpleDB.framework */,
-				95A6E9B31AE21D0000F23DA6 /* AWSSNS.framework */,
-				95A6E9B41AE21D0000F23DA6 /* AWSSQS.framework */,
+				1B22308D1AE234260082CF32 /* autoscaling-2011-01-01.json */,
+				1B22308E1AE234260082CF32 /* cognito-identity-2014-06-30.json */,
+				1B22308F1AE234260082CF32 /* cognito-sync-2014-06-30.json */,
+				1B2230901AE234260082CF32 /* dynamodb-2012-08-10.json */,
+				1B2230911AE234260082CF32 /* ec2-2014-09-01.json */,
+				1B2230921AE234260082CF32 /* elasticloadbalancing-2012-06-01.json */,
+				1B2230931AE234260082CF32 /* email-2010-12-01.json */,
+				1B2230941AE234260082CF32 /* kinesis-2013-12-02.json */,
+				1B2230951AE234260082CF32 /* lambda-2015-03-31.json */,
+				1B2230961AE234260082CF32 /* machinelearning-2014-12-12.json */,
+				1B2230971AE234260082CF32 /* mobileanalytics-2014-06-30.json */,
+				1B2230981AE234260082CF32 /* monitoring-2010-08-01.json */,
+				1B2230991AE234260082CF32 /* s3-2006-03-01.json */,
+				1B22309A1AE234260082CF32 /* sdb-2009-04-15.json */,
+				1B22309B1AE234260082CF32 /* sns-2010-03-31.json */,
+				1B22309C1AE234260082CF32 /* sqs-2012-11-05.json */,
+				1B22309D1AE234260082CF32 /* sts-2011-06-15.json */,
+				1B22307B1AE233EF0082CF32 /* FBSDKLoginKit.framework */,
+				1B22307C1AE233EF0082CF32 /* FBSDKShareKit.framework */,
+				1B22307D1AE233EF0082CF32 /* FMDB.framework */,
+				1B22307E1AE233EF0082CF32 /* GZIP.framework */,
+				1B22307F1AE233EF0082CF32 /* Mantle.framework */,
+				1B2230801AE233EF0082CF32 /* Reachability.framework */,
+				1B2230811AE233F00082CF32 /* TMCache.framework */,
+				1B2230821AE233F00082CF32 /* UICKeyChainStore.framework */,
+				1B2230831AE233F00082CF32 /* XMLDictionary.framework */,
+				1B2230571AE233D50082CF32 /* AWSAutoScaling.framework */,
+				1B2230581AE233D50082CF32 /* AWSCloudWatch.framework */,
+				1B2230591AE233D50082CF32 /* AWSCognito.framework */,
+				1B22305A1AE233D50082CF32 /* AWSCore.framework */,
+				1B22305B1AE233D50082CF32 /* AWSDynamoDB.framework */,
+				1B22305C1AE233D50082CF32 /* AWSEC2.framework */,
+				1B22305D1AE233D50082CF32 /* AWSElasticLoadBalancing.framework */,
+				1B22305E1AE233D50082CF32 /* AWSKinesis.framework */,
+				1B22305F1AE233D50082CF32 /* AWSLambda.framework */,
+				1B2230601AE233D50082CF32 /* AWSMachineLearning.framework */,
+				1B2230611AE233D50082CF32 /* AWSS3.framework */,
+				1B2230621AE233D50082CF32 /* AWSSES.framework */,
+				1B2230631AE233D50082CF32 /* AWSSimpleDB.framework */,
+				1B2230641AE233D50082CF32 /* AWSSNS.framework */,
+				1B2230651AE233D50082CF32 /* AWSSQS.framework */,
+				1B2230661AE233D50082CF32 /* Bolts.framework */,
+				1B2230671AE233D50082CF32 /* FBAudienceNetwork.framework */,
+				1B2230681AE233D50082CF32 /* FBSDKCoreKit.framework */,
 				95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */,
 				95A6E9971AE1B27900F23DA6 /* libz.dylib */,
 				95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */,
@@ -402,29 +402,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95A6E9F71AE21D8100F23DA6 /* machinelearning-2014-12-12.json in Resources */,
-				95A6E9F01AE21D8100F23DA6 /* cognito-sync-2014-06-30.json in Resources */,
-				95A6E9FE1AE21D8100F23DA6 /* sts-2011-06-15.json in Resources */,
-				95A6E9F11AE21D8100F23DA6 /* dynamodb-2012-08-10.json in Resources */,
-				95A6E9FC1AE21D8100F23DA6 /* sns-2010-03-31.json in Resources */,
-				95A6E9F41AE21D8100F23DA6 /* email-2010-12-01.json in Resources */,
-				95A6E9FB1AE21D8100F23DA6 /* sdb-2009-04-15.json in Resources */,
+				1B2230A71AE234260082CF32 /* machinelearning-2014-12-12.json in Resources */,
+				1B2230A01AE234260082CF32 /* cognito-sync-2014-06-30.json in Resources */,
+				1B2230AE1AE234260082CF32 /* sts-2011-06-15.json in Resources */,
+				1B2230A11AE234260082CF32 /* dynamodb-2012-08-10.json in Resources */,
+				1B2230AC1AE234260082CF32 /* sns-2010-03-31.json in Resources */,
+				1B2230A41AE234260082CF32 /* email-2010-12-01.json in Resources */,
+				1B2230AB1AE234260082CF32 /* sdb-2009-04-15.json in Resources */,
 				1B865A411AE18FA30054208C /* DealData.xcdatamodeld in Resources */,
-				95A6E9FD1AE21D8100F23DA6 /* sqs-2012-11-05.json in Resources */,
-				95A6E9F61AE21D8100F23DA6 /* lambda-2015-03-31.json in Resources */,
-				95A6E9EE1AE21D8100F23DA6 /* autoscaling-2011-01-01.json in Resources */,
-				95A6E9F51AE21D8100F23DA6 /* kinesis-2013-12-02.json in Resources */,
-				95A6E9EF1AE21D8100F23DA6 /* cognito-identity-2014-06-30.json in Resources */,
-				95A6E9F91AE21D8100F23DA6 /* monitoring-2010-08-01.json in Resources */,
+				1B2230AD1AE234260082CF32 /* sqs-2012-11-05.json in Resources */,
+				1B2230A61AE234260082CF32 /* lambda-2015-03-31.json in Resources */,
+				1B22309E1AE234260082CF32 /* autoscaling-2011-01-01.json in Resources */,
+				1B2230A51AE234260082CF32 /* kinesis-2013-12-02.json in Resources */,
+				1B22309F1AE234260082CF32 /* cognito-identity-2014-06-30.json in Resources */,
+				1B2230A91AE234260082CF32 /* monitoring-2010-08-01.json in Resources */,
 				1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */,
-				95A6E9FA1AE21D8100F23DA6 /* s3-2006-03-01.json in Resources */,
+				1B2230AA1AE234260082CF32 /* s3-2006-03-01.json in Resources */,
 				1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */,
-				95A6E9F31AE21D8100F23DA6 /* elasticloadbalancing-2012-06-01.json in Resources */,
-				95A6E9F81AE21D8100F23DA6 /* mobileanalytics-2014-06-30.json in Resources */,
+				1B2230A31AE234260082CF32 /* elasticloadbalancing-2012-06-01.json in Resources */,
+				1B2230A81AE234260082CF32 /* mobileanalytics-2014-06-30.json in Resources */,
 				1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */,
 				1BBF409F1ADDBF1800B2082B /* icon-profile-default.png in Resources */,
 				1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */,
-				95A6E9F21AE21D8100F23DA6 /* ec2-2014-09-01.json in Resources */,
+				1B2230A21AE234260082CF32 /* ec2-2014-09-01.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,11 +588,12 @@
 					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
 					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/third-party",
 					/Users/kisukjang/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal/AWSHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Deal/AWSHeader.h;
 			};
 			name = Debug;
 		};
@@ -610,11 +611,12 @@
 					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
 					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/third-party",
 					/Users/kisukjang/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal/AWSHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = ./Deal/AWSHeader.h;
 			};
 			name = Release;
 		};

@@ -12,7 +12,7 @@ class DealCreateViewController: UIViewController {
 
     required init(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
-        self.new_deal = Deal(task: "", reward: "", deal_type: Deal.FilterType.ME_FILTER_TYPE)
+        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : "", dealee_id : "")
         super.init(coder: aDecoder)
     }
 
