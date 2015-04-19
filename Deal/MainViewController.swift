@@ -145,6 +145,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
             cell = DealCustomTableCell (style: UITableViewCellStyle.Default, reuseIdentifier: dealCellIdentifier)
         }
         let row = indexPath.row
+        cell!.userInteractionEnabled = false
         cell!.populate_with_data(filtered_deals[row])
         return cell!
     }
@@ -152,10 +153,10 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
 
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println ("NOT IMPLEMENTED YET")
+        /*println ("NOT IMPLEMENTED YET")
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.performSegueWithIdentifier(deal_detail_segue_identifer, sender: tableView)
-        let row = indexPath.row
+        let row = indexPath.row*/
     }
     
 

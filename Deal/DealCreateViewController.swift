@@ -114,10 +114,7 @@ class DealCreateViewController: UIViewController,  UITableViewDelegate, UITableV
         } else {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.deal_data_manager!.saveDeal(new_deal)
-                errorMessage = "You successfully made a deal with " + self.dealee!.First_Name
-            var alert = UIAlertController(title: "Alert", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            
                 self.dismissViewControllerAnimated(true, completion: nil)
                 return
         }
