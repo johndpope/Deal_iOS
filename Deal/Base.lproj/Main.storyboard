@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PS7-ig-PRl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -13,22 +13,23 @@
                         <viewControllerLayoutGuide type="bottom" id="Pr2-a9-CIe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="60b-6e-wDe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deals_Text_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-bG-z8j">
-                                <rect key="frame" x="67" y="140" width="186" height="61"/>
+                                <rect key="frame" x="94" y="160" width="186" height="61"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="PS7-ig-PRl" kind="modal" identifier="login_segue_identifier" id="50A-Ec-QsZ"/>
+                        <segue destination="PS7-ig-PRl" kind="presentation" identifier="login_segue_identifier" id="50A-Ec-QsZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWf-jF-yfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="-1366"/>
+            <point key="canvasLocation" x="1098.75" y="-1442.9577464788731"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="2Ul-hW-jVC">
@@ -39,7 +40,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8u7-LG-DB1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gzi-PV-BmO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qhd-Em-Ez8">
@@ -111,7 +112,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4KI-dR-dSQ" kind="modal" id="ZEE-lY-Nc4"/>
+                                    <segue destination="4KI-dR-dSQ" kind="presentation" id="ZEE-lY-Nc4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBa-Mj-qqS">
@@ -149,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-CJ-nfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-14"/>
+            <point key="canvasLocation" x="1632.5" y="-15.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="79i-Hm-M7K">
@@ -160,7 +161,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zxt-60-dP2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M62-70-yhz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="y4U-yy-WpQ">
@@ -198,7 +199,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="profile_picture_pressed:" destination="Lfl-Ca-nts" eventType="touchUpInside" id="33V-HP-zYY"/>
-                                                        <segue destination="jUj-Iw-1Mi" kind="modal" identifier="show_profile" id="3fs-E0-fFH"/>
+                                                        <segue destination="jUj-Iw-1Mi" kind="presentation" identifier="show_profile" id="3fs-E0-fFH"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -208,7 +209,7 @@
                                             <outlet property="profile_image" destination="gL6-Mj-cse" id="yp4-bN-PYI"/>
                                             <outlet property="reward_label" destination="ish-az-S9C" id="gNI-3h-nZk"/>
                                             <outlet property="task_label" destination="64B-Lp-scf" id="Nc2-fh-fRf"/>
-                                            <segue destination="eUv-YN-2Q9" kind="modal" identifier="deal_detail" trigger="accessoryAction" id="pli-UH-ukS"/>
+                                            <segue destination="eUv-YN-2Q9" kind="presentation" identifier="deal_detail" trigger="accessoryAction" id="pli-UH-ukS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -218,34 +219,43 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2M-YK-uau">
-                                <rect key="frame" x="129" y="20" width="45" height="30"/>
+                                <rect key="frame" x="157" y="20" width="45" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Family">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="family_filter_pressed:" destination="PS7-ig-PRl" eventType="touchUpInside" id="8cJ-He-hs4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-J9-wO4">
-                                <rect key="frame" x="182" y="20" width="51" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-J9-wO4">
+                                <rect key="frame" x="210" y="20" width="51" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Friends">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="friends_filter_pressed:" destination="PS7-ig-PRl" eventType="touchUpInside" id="hma-xq-KgQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6h-HM-hmy">
-                                <rect key="frame" x="91" y="20" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6h-HM-hmy">
+                                <rect key="frame" x="119" y="20" width="30" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Me">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="me_filter_pressed:" destination="PS7-ig-PRl" eventType="touchUpInside" id="cUo-yU-6PY"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-2i-d0E">
+                                <rect key="frame" x="16" y="26" width="20" height="18"/>
+                                <state key="normal" image="Three_Bar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82R-4L-jbb">
                                 <rect key="frame" x="281" y="20" width="23" height="23"/>
@@ -256,7 +266,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4KI-dR-dSQ" kind="modal" identifier="general_make_deal" id="gJ3-3D-bQ9"/>
+                                    <segue destination="4KI-dR-dSQ" kind="presentation" identifier="general_make_deal" id="gJ3-3D-bQ9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-2i-d0E">
@@ -269,6 +279,7 @@
                         <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="MQD-hm-maZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="family_filter_btn" destination="g2M-YK-uau" id="b7U-do-A8T"/>
                         <outlet property="friends_filter_btn" destination="MGM-J9-wO4" id="UdI-6T-e5z"/>
@@ -280,7 +291,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnH-8o-mgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="EMk-D6-1oJ"/>
             </objects>
-            <point key="canvasLocation" x="313" y="-480"/>
+            <point key="canvasLocation" x="586.5" y="-507.5"/>
         </scene>
         <!--DealDetailViewController-->
         <scene sceneID="RkL-Tt-V9w">
@@ -291,11 +302,11 @@
                         <viewControllerLayoutGuide type="bottom" id="nwz-tI-cor"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SPb-m6-7VV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOL-LR-b4p">
-                                <rect key="frame" x="268" y="37" width="23" height="23"/>
+                                <rect key="frame" x="343" y="33" width="23" height="23"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
@@ -303,7 +314,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4KI-dR-dSQ" kind="modal" id="0hI-7H-PMH"/>
+                                    <segue destination="4KI-dR-dSQ" kind="presentation" id="0hI-7H-PMH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a0-06-GfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="254"/>
+            <point key="canvasLocation" x="586.875" y="268.30985915492954"/>
         </scene>
         <!--Create-->
         <scene sceneID="zBx-kZ-prU">
@@ -323,7 +334,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HYg-Gl-neg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pl3-wE-lW7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I promise to do ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHH-ak-jWL">
@@ -407,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QX5-GP-NP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="-903"/>
+            <point key="canvasLocation" x="1905" y="-953.87323943661966"/>
         </scene>
     </scenes>
     <resources>
@@ -420,12 +431,7 @@
         <image name="add_deal.png" width="512" height="512"/>
         <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZEE-lY-Nc4"/>
+        <segue reference="gJ3-3D-bQ9"/>
     </inferredMetricsTieBreakers>
 </document>

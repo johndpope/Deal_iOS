@@ -42,18 +42,21 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     
-    @IBAction func me_filter_pressed(sender: AnyObject) {
+    @IBAction func me_filter_pressed(sender: UIButton) {
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
+        sender.titleLabel?.textColor  = UIColor.redColor()
         mark_filter_btn(Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
-    @IBAction func family_filter_pressed(sender: AnyObject) {
+    @IBAction func family_filter_pressed(sender: UIButton) {
         filter_deals (Deal.FilterType.FAMILY_FILTER_TYPE)
+        sender.titleLabel?.textColor  = UIColor.redColor()
          mark_filter_btn(Deal.FilterType.FAMILY_FILTER_TYPE)
         self.tableView.reloadData()
     }
-    @IBAction func friends_filter_pressed(sender: AnyObject) {
+    @IBAction func friends_filter_pressed(sender: UIButton) {
         filter_deals (Deal.FilterType.FRIENDS_FILTER_TYPE)
+          sender.titleLabel?.textColor  = UIColor.redColor()
          mark_filter_btn(Deal.FilterType.FRIENDS_FILTER_TYPE)
         self.tableView.reloadData()
         
