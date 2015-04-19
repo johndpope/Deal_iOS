@@ -402,6 +402,7 @@
 				TargetAttributes = {
 					1BDBF2CE1ABEAB5100A0C45D = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 5SL9V3WA7C;
 					};
 					1BDBF2E51ABEAB5200A0C45D = {
 						CreatedOnToolsVersion = 6.2;
@@ -614,6 +615,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/frameworks",
@@ -625,6 +628,7 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Deal/AWSHeader.h;
 			};
 			name = Debug;
@@ -633,6 +637,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/frameworks",
@@ -644,6 +650,7 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Deal/AWSHeader.h;
 			};
 			name = Release;
