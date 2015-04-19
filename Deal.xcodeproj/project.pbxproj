@@ -81,6 +81,10 @@
 		95A6E9981AE1B27900F23DA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9971AE1B27900F23DA6 /* libz.dylib */; };
 		95A6E99A1AE1B28000F23DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */; };
 		95A6EA001AE2284300F23DA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6E9FF1AE2284300F23DA6 /* User.swift */; };
+		95F1E2E61AE38A2600B14619 /* Jenny_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F1E2E51AE38A2600B14619 /* Jenny_Profile.png */; };
+		95F1E2EA1AE3967A00B14619 /* Jack_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F1E2E71AE3967A00B14619 /* Jack_Profile.png */; };
+		95F1E2EB1AE3967A00B14619 /* Peter_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F1E2E81AE3967A00B14619 /* Peter_Profile.png */; };
+		95F1E2EC1AE3967A00B14619 /* Aime_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F1E2E91AE3967A00B14619 /* Aime_Profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +176,10 @@
 		95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		95A6E99C1AE1B34F00F23DA6 /* AWSHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSHeader.h; sourceTree = "<group>"; };
 		95A6E9FF1AE2284300F23DA6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95F1E2E51AE38A2600B14619 /* Jenny_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jenny_Profile.png; sourceTree = "<group>"; };
+		95F1E2E71AE3967A00B14619 /* Jack_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jack_Profile.png; sourceTree = "<group>"; };
+		95F1E2E81AE3967A00B14619 /* Peter_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter_Profile.png; sourceTree = "<group>"; };
+		95F1E2E91AE3967A00B14619 /* Aime_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aime_Profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +319,10 @@
 		1BDBF2D21ABEAB5200A0C45D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95F1E2E51AE38A2600B14619 /* Jenny_Profile.png */,
+				95F1E2E71AE3967A00B14619 /* Jack_Profile.png */,
+				95F1E2E81AE3967A00B14619 /* Peter_Profile.png */,
+				95F1E2E91AE3967A00B14619 /* Aime_Profile.png */,
 				95531BF11AE36C4300A617D6 /* Blurry_Background_Profile_Image.png */,
 				95531BEF1AE36AF100A617D6 /* Make_A_Deal_Button.png */,
 				95531BED1AE36A8F00A617D6 /* Back_Arrow.png */,
@@ -444,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95531BE81AE3683E00A617D6 /* Background_Blur.png in Resources */,
+				95F1E2E61AE38A2600B14619 /* Jenny_Profile.png in Resources */,
 				1B2230A71AE234260082CF32 /* machinelearning-2014-12-12.json in Resources */,
 				1B2230A01AE234260082CF32 /* cognito-sync-2014-06-30.json in Resources */,
 				1B2230AE1AE234260082CF32 /* sts-2011-06-15.json in Resources */,
@@ -451,12 +464,15 @@
 				1B2230AC1AE234260082CF32 /* sns-2010-03-31.json in Resources */,
 				1B2230A41AE234260082CF32 /* email-2010-12-01.json in Resources */,
 				1B2230AB1AE234260082CF32 /* sdb-2009-04-15.json in Resources */,
+				95F1E2EC1AE3967A00B14619 /* Aime_Profile.png in Resources */,
 				1B865A411AE18FA30054208C /* DealData.xcdatamodeld in Resources */,
 				1B2230AD1AE234260082CF32 /* sqs-2012-11-05.json in Resources */,
 				1B2230A61AE234260082CF32 /* lambda-2015-03-31.json in Resources */,
+				95F1E2EA1AE3967A00B14619 /* Jack_Profile.png in Resources */,
 				1B22309E1AE234260082CF32 /* autoscaling-2011-01-01.json in Resources */,
 				1B2230A51AE234260082CF32 /* kinesis-2013-12-02.json in Resources */,
 				1B22309F1AE234260082CF32 /* cognito-identity-2014-06-30.json in Resources */,
+				95F1E2EB1AE3967A00B14619 /* Peter_Profile.png in Resources */,
 				1B2230A91AE234260082CF32 /* monitoring-2010-08-01.json in Resources */,
 				95531BEC1AE3684B00A617D6 /* Three_Bar.png in Resources */,
 				95531BEE1AE36A8F00A617D6 /* Back_Arrow.png in Resources */,
