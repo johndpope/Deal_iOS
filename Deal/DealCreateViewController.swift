@@ -110,6 +110,7 @@ class DealCreateViewController: UIViewController,  UITableViewDelegate, UITableV
             errorMessage = "You must enter both a task an a reward. Complete missing fields."
         } else if (self.dealee == nil) {
              errorMessage = "You must pick someone to deal with!"
+            
         } else {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.deal_data_manager!.saveDeal(new_deal)
