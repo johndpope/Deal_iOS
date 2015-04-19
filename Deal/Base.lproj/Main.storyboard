@@ -139,21 +139,6 @@
                                     <action selector="back_btn_pressed:" destination="jUj-Iw-1Mi" eventType="touchUpInside" id="y3O-MS-oIT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short Biography here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMn-Vy-SSb">
-                                <rect key="frame" x="106" y="242" width="163" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-Mq-7DX">
-                                <rect key="frame" x="151" y="271" width="73" height="30"/>
-                                <state key="normal" title="Make Deal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4KI-dR-dSQ" kind="presentation" id="D4A-8q-ece"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
