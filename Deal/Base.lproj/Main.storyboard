@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -15,7 +15,12 @@
                     <view key="view" contentMode="scaleToFill" id="60b-6e-wDe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deals_Text_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-bG-z8j">
+                                <rect key="frame" x="67" y="140" width="186" height="61"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <segue destination="PS7-ig-PRl" kind="modal" identifier="login_segue_identifier" id="50A-Ec-QsZ"/>
@@ -142,6 +147,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2M-YK-uau">
                                 <rect key="frame" x="129" y="20" width="45" height="30"/>
                                 <state key="normal" title="Family">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -151,6 +157,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-J9-wO4">
                                 <rect key="frame" x="182" y="20" width="51" height="30"/>
                                 <state key="normal" title="Friends">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -160,6 +167,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6h-HM-hmy">
                                 <rect key="frame" x="91" y="20" width="30" height="30"/>
                                 <state key="normal" title="Me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -167,25 +175,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82R-4L-jbb">
-                                <rect key="frame" x="286" y="23" width="23" height="23"/>
+                                <rect key="frame" x="281" y="23" width="23" height="23"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
-                                <state key="normal" title="Button" image="add_deal.png">
+                                <state key="normal" title="Button" image="Create_Deal.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="4KI-dR-dSQ" kind="modal" identifier="general_make_deal" id="gJ3-3D-bQ9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-2i-d0E">
-                                <rect key="frame" x="7" y="16" width="39" height="30"/>
-                                <state key="normal" title="Menu">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-2i-d0E">
+                                <rect key="frame" x="16" y="26" width="20" height="18"/>
+                                <state key="normal" image="Three_Bar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="MQD-hm-maZ"/>
                     <connections>
@@ -316,7 +324,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add_deal.png" width="512" height="512"/>
+        <image name="Create_Deal.png" width="77" height="77"/>
+        <image name="Deals_Text_Logo.png" width="710" height="214"/>
+        <image name="Three_Bar.png" width="83" height="46"/>
         <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
