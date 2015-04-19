@@ -39,6 +39,7 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         get_deals_for_user ()
@@ -47,7 +48,6 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
-    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -76,12 +76,17 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         return cell!
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        if let dv = segue.destinationViewController as? DealCreateViewController {
+            dv.dealee = select_user
+        }
+    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        /*println ("NOT IMPLEMENTED YET")
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.performSegueWithIdentifier(deal_detail_segue_identifer, sender: tableView)
+        /*self.performSegueWithIdentifier(deal_detail_segue_identifer, sender: tableView)
         let row = indexPath.row*/
     }
 }

@@ -14,3 +14,4 @@ let deal_detail_segue_identifer = "deal_detail"
 let login_segue_identifier = "login_segue_identifier"
 
 let profile_deal_cell_identifier = "profile_deal_cell_identifier"
+let user_search_cell_identifier = "user_search_cell_identifier"

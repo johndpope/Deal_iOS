@@ -69,7 +69,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-TQ-dy7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="78"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="89" height="78"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reward" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-kY-nMr">
                                                     <rect key="frame" x="109" y="49" width="203" height="21"/>
@@ -123,6 +123,9 @@
                                 <state key="normal" title="Make Deal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4KI-dR-dSQ" kind="presentation" id="D4A-8q-ece"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -134,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-CJ-nfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.5" y="-15.5"/>
+            <point key="canvasLocation" x="1630.5" y="-85.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="79i-Hm-M7K">
@@ -315,14 +318,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I promise to do ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHH-ak-jWL">
-                                <rect key="frame" x="93" y="65" width="135" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gao-Sq-xW2">
+                                <rect key="frame" x="16" y="408" width="343" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Deal!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeDealBtnPressed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="2pD-Qu-ME3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yym-AJ-m6e">
+                                <rect key="frame" x="16" y="16" width="45" height="30"/>
+                                <state key="normal" title="cancel">
+                                    <color key="titleColor" red="1" green="0.46930916680000001" blue="0.35789064370000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit_pressed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="Jip-ha-aTG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a deal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZ0-1b-d8n">
+                                <rect key="frame" x="140" y="20" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9v5-fN-pmk">
-                                <rect key="frame" x="84" y="116" width="144" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name or @email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-ZG-sKI">
+                                <rect key="frame" x="0.0" y="54" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="user_search_began:" destination="4KI-dR-dSQ" eventType="editingDidBegin" id="ERE-MJ-MiK"/>
+                                    <action selector="user_search_changed:" destination="4KI-dR-dSQ" eventType="editingChanged" id="vjQ-dH-LGu"/>
+                                    <action selector="user_search_discarded:" destination="4KI-dR-dSQ" eventType="touchUpOutside" id="lA0-m3-7Ti"/>
+                                    <action selector="user_search_ended:" destination="4KI-dR-dSQ" eventType="editingDidEnd" id="SNq-Z1-ti4"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="I will..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9v5-fN-pmk">
+                                <rect key="frame" x="0.0" y="110" width="375" height="112"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -330,73 +365,29 @@
                                     <outlet property="delegate" destination="pl3-wE-lW7" id="gTK-j1-waN"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLM-W0-PAc">
-                                <rect key="frame" x="76" y="289" width="45" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Parent">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="parentAgreed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="djz-eD-ZG9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-9A-epE">
-                                <rect key="frame" x="198" y="289" width="30" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Kid">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="kidAgreed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="way-DG-Ad5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In exchange for..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHG-ce-p0L">
-                                <rect key="frame" x="93" y="177" width="135" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gao-Sq-xW2">
-                                <rect key="frame" x="120" y="349" width="81" height="38"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Deal!"/>
-                                <connections>
-                                    <action selector="makeDealBtnPressed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="2pD-Qu-ME3"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-wg-d3c">
-                                <rect key="frame" x="84" y="217" width="146" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="In exchange for..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-wg-d3c">
+                                <rect key="frame" x="0.0" y="259" width="375" height="114"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="rewardEntered:" destination="4KI-dR-dSQ" eventType="editingDidEnd" id="VuN-Xj-Gvm"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yym-AJ-m6e">
-                                <rect key="frame" x="16" y="20" width="30" height="30"/>
-                                <state key="normal" title="exit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="exit_pressed:" destination="4KI-dR-dSQ" eventType="touchUpInside" id="Jip-ha-aTG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="94U-Gn-OfS"/>
                     <navigationItem key="navigationItem" id="u3E-Mx-Pu4"/>
                     <connections>
-                        <outlet property="kidAgreeBtn" destination="F7Y-9A-epE" id="gm4-gZ-0q0"/>
                         <outlet property="makeDealBtn" destination="gao-Sq-xW2" id="oPj-A2-qtY"/>
-                        <outlet property="parentAgreeBtn" destination="qLM-W0-PAc" id="N1Z-Uz-bc4"/>
                         <outlet property="rewardTextField" destination="vbX-wg-d3c" id="2Tf-UF-7sc"/>
                         <outlet property="taskTextField" destination="9v5-fN-pmk" id="wq3-MD-lAY"/>
+                        <outlet property="user_search_textfield" destination="r5b-ZG-sKI" id="H2s-Me-Mj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QX5-GP-NP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="-953.87323943661966"/>
+            <point key="canvasLocation" x="2078.5" y="-885.5"/>
         </scene>
     </scenes>
     <resources>
@@ -407,6 +398,6 @@
         <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gJ3-3D-bQ9"/>
+        <segue reference="ZEE-lY-Nc4"/>
     </inferredMetricsTieBreakers>
 </document>
