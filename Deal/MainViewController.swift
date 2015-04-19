@@ -233,6 +233,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         for user in all_users {
             appDelegate.deal_data_manager!.add_user(user)
         }
+        appDelegate.deal_data_manager!.cur_user = all_users [0]
     }
 
     

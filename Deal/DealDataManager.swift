@@ -11,19 +11,18 @@ import CoreData
 
 class DealDataManager {
    
-    
-    //var cur_user : DealUser
-    
-    
     /* Cached version */
     //var deals : [NSManagedObject]
     var deals : [Deal]
     var deal_users : [String : User]
     
+    var cur_user : User?
+    
     init () {
         self.deals = []
-        deal_users = Dictionary<String, User>()
+        self.deal_users = Dictionary<String, User>()
     }
+    
     
     /*func fetchDeals (appDelegate : AppDelegate) {
         

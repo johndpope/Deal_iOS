@@ -398,6 +398,7 @@
         <image name="Create_Deal.png" width="77" height="77"/>
         <image name="Deals_Text_Logo.png" width="710" height="214"/>
         <image name="Three_Bar.png" width="83" height="46"/>
+        <image name="add_deal.png" width="512" height="512"/>
         <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
