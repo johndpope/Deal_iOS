@@ -69,10 +69,10 @@
 		1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7C0A01ADC953700E029F3 /* add_deal.png */; };
 		1BE7C0A31ADCA20D00E029F3 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7C0A21ADCA20D00E029F3 /* Deal.swift */; };
 		1BE7C0A51ADD902E00E029F3 /* DealDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7C0A41ADD902E00E029F3 /* DealDataManager.swift */; };
-		95531BDE1AE35CB100A617D6 /* Deals_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BDD1AE35CB100A617D6 /* Deals_Text_Logo.png */; };
-		95531BE01AE35D1A00A617D6 /* Background_Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BDF1AE35D1A00A617D6 /* Background_Blur.png */; };
-		95531BE21AE35F7300A617D6 /* Create_Deal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE11AE35F7300A617D6 /* Create_Deal.png */; };
-		95531BE41AE35FBA00A617D6 /* Three_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE31AE35FBA00A617D6 /* Three_Bar.png */; };
+		95531BE61AE3683700A617D6 /* Deals_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE51AE3683700A617D6 /* Deals_Text_Logo.png */; };
+		95531BE81AE3683E00A617D6 /* Background_Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE71AE3683E00A617D6 /* Background_Blur.png */; };
+		95531BEA1AE3684500A617D6 /* Create_Deal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE91AE3684500A617D6 /* Create_Deal.png */; };
+		95531BEC1AE3684B00A617D6 /* Three_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BEB1AE3684B00A617D6 /* Three_Bar.png */; };
 		95A6E9961AE1B27300F23DA6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */; };
 		95A6E9981AE1B27900F23DA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9971AE1B27900F23DA6 /* libz.dylib */; };
 		95A6E99A1AE1B28000F23DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */; };
@@ -155,10 +155,10 @@
 		1BE7C0A01ADC953700E029F3 /* add_deal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_deal.png; sourceTree = "<group>"; };
 		1BE7C0A21ADCA20D00E029F3 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 		1BE7C0A41ADD902E00E029F3 /* DealDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDataManager.swift; sourceTree = "<group>"; };
-		95531BDD1AE35CB100A617D6 /* Deals_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Deals_Text_Logo.png; path = ../../../../../../Downloads/Deals_Text_Logo.png; sourceTree = "<group>"; };
-		95531BDF1AE35D1A00A617D6 /* Background_Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_Blur.png; path = ../../../../../../Downloads/Background_Blur.png; sourceTree = "<group>"; };
-		95531BE11AE35F7300A617D6 /* Create_Deal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Create_Deal.png; path = ../../../../../../Downloads/Create_Deal.png; sourceTree = "<group>"; };
-		95531BE31AE35FBA00A617D6 /* Three_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Three_Bar.png; path = ../../../../../../Downloads/Three_Bar.png; sourceTree = "<group>"; };
+		95531BE51AE3683700A617D6 /* Deals_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deals_Text_Logo.png; sourceTree = "<group>"; };
+		95531BE71AE3683E00A617D6 /* Background_Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Blur.png; sourceTree = "<group>"; };
+		95531BE91AE3684500A617D6 /* Create_Deal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Create_Deal.png; sourceTree = "<group>"; };
+		95531BEB1AE3684B00A617D6 /* Three_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Three_Bar.png; sourceTree = "<group>"; };
 		95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		95A6E9971AE1B27900F23DA6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -306,10 +306,10 @@
 		1BDBF2D21ABEAB5200A0C45D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95531BE31AE35FBA00A617D6 /* Three_Bar.png */,
-				95531BE11AE35F7300A617D6 /* Create_Deal.png */,
-				95531BDF1AE35D1A00A617D6 /* Background_Blur.png */,
-				95531BDD1AE35CB100A617D6 /* Deals_Text_Logo.png */,
+				95531BEB1AE3684B00A617D6 /* Three_Bar.png */,
+				95531BE91AE3684500A617D6 /* Create_Deal.png */,
+				95531BE71AE3683E00A617D6 /* Background_Blur.png */,
+				95531BE51AE3683700A617D6 /* Deals_Text_Logo.png */,
 				1BBF409E1ADDBF1800B2082B /* icon-profile-default.png */,
 				1BE7C0A01ADC953700E029F3 /* add_deal.png */,
 				1BDBF2D31ABEAB5200A0C45D /* Info.plist */,
@@ -414,7 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95531BE01AE35D1A00A617D6 /* Background_Blur.png in Resources */,
+				95531BE81AE3683E00A617D6 /* Background_Blur.png in Resources */,
 				1B2230A71AE234260082CF32 /* machinelearning-2014-12-12.json in Resources */,
 				1B2230A01AE234260082CF32 /* cognito-sync-2014-06-30.json in Resources */,
 				1B2230AE1AE234260082CF32 /* sts-2011-06-15.json in Resources */,
@@ -429,14 +429,14 @@
 				1B2230A51AE234260082CF32 /* kinesis-2013-12-02.json in Resources */,
 				1B22309F1AE234260082CF32 /* cognito-identity-2014-06-30.json in Resources */,
 				1B2230A91AE234260082CF32 /* monitoring-2010-08-01.json in Resources */,
-				95531BE41AE35FBA00A617D6 /* Three_Bar.png in Resources */,
+				95531BEC1AE3684B00A617D6 /* Three_Bar.png in Resources */,
 				1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */,
 				1B2230AA1AE234260082CF32 /* s3-2006-03-01.json in Resources */,
 				1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */,
 				1B2230A31AE234260082CF32 /* elasticloadbalancing-2012-06-01.json in Resources */,
 				1B2230A81AE234260082CF32 /* mobileanalytics-2014-06-30.json in Resources */,
-				95531BDE1AE35CB100A617D6 /* Deals_Text_Logo.png in Resources */,
-				95531BE21AE35F7300A617D6 /* Create_Deal.png in Resources */,
+				95531BE61AE3683700A617D6 /* Deals_Text_Logo.png in Resources */,
+				95531BEA1AE3684500A617D6 /* Create_Deal.png in Resources */,
 				1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */,
 				1BBF409F1ADDBF1800B2082B /* icon-profile-default.png in Resources */,
 				1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */,
