@@ -64,10 +64,25 @@ class DealCustomTableCell: UITableViewCell {
     }
     
     func populate_with_data (deal : Deal) {
+        profile_image.layer.cornerRadius = profile_image.frame.size.height / 2;
+        profile_image.clipsToBounds = true
+        profile_image.layer.borderWidth = 0.5
+        profile_image.layer.borderColor = UIColor.blackColor().CGColor
+        
         self.deal = deal
         task_label.text = deal.Task
         reward_label.text = deal.Reward
         participant_label.text = generate_deal_string (deal)
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let curr_user = appDelegate.deal_data_manager?.cur_user
+        var other_id = deal.getDealerId()
+        if (other_id == curr_user?.User_Id){
+            other_id = deal.getDealeeId()
+        }
+        
+        let other_user = appDelegate.deal_data_manager?.deal_users[other_id]
+        profile_image.setImage(UIImage(data: other_user!.Profile_Photo!), forState: .Normal)
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

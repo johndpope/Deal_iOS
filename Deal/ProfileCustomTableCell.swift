@@ -15,6 +15,7 @@ class ProfileCustomTableCell : UITableViewCell {
     @IBOutlet weak var reward_label: UILabel!
     @IBOutlet weak var task_label: UILabel!
     
+    @IBOutlet weak var profile_image: UIImageView!
     @IBOutlet weak var participant_label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,6 +42,22 @@ class ProfileCustomTableCell : UITableViewCell {
         task_label.text = deal.Task
         reward_label.text = deal.Reward
         participant_label.text = generate_deal_string (deal)
+        
+        profile_image.layer.cornerRadius = profile_image.frame.size.height / 2;
+        profile_image.clipsToBounds = true
+        profile_image.layer.borderWidth = 0.5
+        profile_image.layer.borderColor = UIColor.blackColor().CGColor
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let curr_user = appDelegate.deal_data_manager?.cur_user
+        let dealer_id = deal.getDealerId()
+        let dealee_id = deal.getDealeeId()
+        if (curr_user?.User_Id == dealer_id || curr_user?.User_Id == dealer_id){
+            profile_image.image = UIImage(data: curr_user!.Profile_Photo!)
+        } else {
+            let other_user = appDelegate.deal_data_manager?.deal_users[dealer_id]
+            profile_image.image = UIImage(data: other_user!.Profile_Photo!)
+        }
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

@@ -11,6 +11,7 @@ import UIKit
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var profile_name_view: UITextView!
+    @IBOutlet weak var profile_image: UIImageView!
     
     required init(coder aDecoder: NSCoder) {
         //select_user =
@@ -48,6 +49,13 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         profile_name_view.text = select_user?.getFullName()
         self.tableView.reloadData()
+        
+        profile_image.layer.cornerRadius = profile_image.frame.size.height / 2;
+        profile_image.clipsToBounds = true
+        profile_image.layer.borderWidth = 0.5
+        profile_image.layer.borderColor = UIColor.blackColor().CGColor
+        profile_image.image = UIImage(data: select_user!.Profile_Photo!)
+        
         // Do any additional setup after loading the view.
     }
     

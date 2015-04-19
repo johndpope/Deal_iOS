@@ -53,6 +53,14 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     return ""
     }*/
     
+    func getDealerId() -> String! {
+        return self.Dealer_Id
+    }
+    
+    func getDealeeId() -> String! {
+        return self.Dealee_Id
+    }
+    
     class func type_to_int (type : FilterType) ->Int{
         switch (type) {
         case FilterType.ME_FILTER_TYPE :

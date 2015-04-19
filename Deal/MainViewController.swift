@@ -219,7 +219,15 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         let user_2 = "2"
         let user_3 = "3"
         
-        let all_users = [User (id: user_1, first_name: "Do", last_name: "Kwon"), User (id: user_2, first_name: "Brian", last_name: "Jang"), User (id: user_3, first_name: "Cameron", last_name: "Lindsay")]
+        var jenny: UIImage = UIImage(named: "Jenny_Profile")!
+        var jenny_nsdata: NSData = NSData(data: UIImagePNGRepresentation(jenny))
+        var aime: UIImage = UIImage(named: "Aime_Profile")!
+        var aime_nsdata: NSData = NSData(data: UIImagePNGRepresentation(aime))
+        var jack: UIImage = UIImage(named: "Jack_Profile")!
+        var jack_nsdata: NSData = NSData(data: UIImagePNGRepresentation(jack))
+        
+        
+        let all_users = [User (id: user_1, first_name: "Aime", last_name: "Lindsay", photo: aime_nsdata), User (id: user_2, first_name: "Jenny", last_name: "Lindsay", photo: jenny_nsdata), User (id: user_3, first_name: "Jack", last_name: "Lindsay", photo: jack_nsdata)]
         
         let all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_2),
             Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),

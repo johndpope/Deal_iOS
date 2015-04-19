@@ -14,14 +14,16 @@ class User : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var First_Name : String = ""
     var Last_Name : String = ""
     var Phone_Num  : String = ""
+    var Profile_Photo : NSData? = nil
     
     override init!() { super.init() }
     
-    init (id : String, first_name:String, last_name:String) {
+    init (id : String, first_name:String, last_name:String, photo: NSData) {
         super.init()
         self.User_Id = id
         self.First_Name = first_name
         self.Last_Name = last_name
+        self.Profile_Photo = photo
     }
     
     required init!(coder: NSCoder!) {
