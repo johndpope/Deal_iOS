@@ -12,3 +12,5 @@ let show_profile_segue_identifier = "show_profile"
 let specific_make_deal_segue_identifier = "specific_make_deal"
 let deal_detail_segue_identifer = "deal_detail"
 let login_segue_identifier = "login_segue_identifier"
+
+let profile_deal_cell_identifier = "profile_deal_cell_identifier"

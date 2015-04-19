@@ -20,6 +20,8 @@ class DealCustomTableCell: UITableViewCell {
         
     }
     
+    var deal : Deal?
+    
     func generate_deal_string (deal:Deal)-> String {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let dealer = appDelegate.deal_data_manager?.find_user(deal.Dealer_Id)
@@ -60,6 +62,7 @@ class DealCustomTableCell: UITableViewCell {
     }
     
     func populate_with_data (deal : Deal) {
+        self.deal = deal
         println (deal.Task)
         if (task_label == nil) {
             println ("Found nil!")

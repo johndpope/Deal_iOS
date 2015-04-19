@@ -179,8 +179,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let makeDealViewController = segue.destinationViewController as! UIViewController
+
         if segue.identifier == specific_make_deal_segue_identifier{
-            let makeDealViewController = segue.destinationViewController as! UIViewController
             
             
             /*if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
@@ -204,17 +205,18 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func viewDidAppear(animated: Bool) {
-        if (FBSDKAccessToken.currentAccessToken() == nil)  {
+        /*if (FBSDKAccessToken.currentAccessToken() == nil)  {
             //performSegueWithIdentifier (login_segue_identifier, sender:self)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("login_controller_id") as! UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
-        }
+        }*/
         
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
     }
     
+    var logged_in = true
     
     /* Testing function. remove later */
     func initialize_deal_data() {
@@ -244,14 +246,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
 
     
     override func viewDidLoad() {
-        // TODO: add real data to all_deals
-        
-        //tableView.delegate = self
-        //tableView.dataSource = self
+       
         me_filter_btn.selected = true
-        
         initialize_deal_data()
-        
     }
     
     /*
