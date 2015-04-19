@@ -13,7 +13,7 @@ class DealCreateViewController: UIViewController {
     required init(coder aDecoder: NSCoder) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         //fatalError("init(coder:) has not been implemented")
-        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : appDelegate.deal_data_manager.cur_user!.User_Id, dealee_id : "")
+        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : appDelegate.deal_data_manager!.cur_user!.User_Id, dealee_id : "")
         super.init(coder: aDecoder)
     }
 

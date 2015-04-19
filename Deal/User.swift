@@ -34,6 +34,10 @@ class User : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     class func hashKeyAttribute() -> String! {
         return "User_Id"
     }
+    
+    func getFullName() -> String! {
+        return self.First_Name + " " + self.Last_Name
+    }
     /*class func rangeKeyAttribute() -> String! {
     return ""
     }*/

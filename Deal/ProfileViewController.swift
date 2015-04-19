@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var profile_name_view: UITextView!
     
     required init(coder aDecoder: NSCoder) {
         //select_user =
@@ -44,6 +45,7 @@ class ProfileViewController : UIViewController, UITableViewDelegate, UITableView
         get_deals_for_user ()
         tableView.dataSource = self
         tableView.delegate = self
+        profile_name_view.text = select_user?.getFullName()
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
