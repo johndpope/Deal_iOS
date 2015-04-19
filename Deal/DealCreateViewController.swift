@@ -11,12 +11,20 @@ import UIKit
 class DealCreateViewController: UIViewController {
 
     required init(coder aDecoder: NSCoder) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         //fatalError("init(coder:) has not been implemented")
-        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : "", dealee_id : "")
+        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : appDelegate.deal_data_manager.cur_user!.User_Id, dealee_id : "")
         super.init(coder: aDecoder)
     }
 
     var new_deal : Deal
+    
+    var dealee : User?
+    
+    func set_delee (user1: User) {
+        self.dealee = user1
+        
+    }
     
     var parent_agreed : Bool = false
     var kid_agreed : Bool = false
@@ -61,8 +69,6 @@ class DealCreateViewController: UIViewController {
         if (rewardTextField.text == "" || taskTextField.text == "") {
             errorMessage = "You must enter both a task an a reward. Complete missing fields."
         } else {
-            
-        
             if (parent_agreed && kid_agreed) {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.deal_data_manager!.saveDeal(new_deal)

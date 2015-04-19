@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PS7-ig-PRl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -33,7 +33,7 @@
         <!--ProfileViewController-->
         <scene sceneID="2Ul-hW-jVC">
             <objects>
-                <viewController id="jUj-Iw-1Mi" userLabel="ProfileViewController" customClass="ProfileViewContoller" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jUj-Iw-1Mi" userLabel="ProfileViewController" customClass="ProfileViewController" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OiM-R0-ZyJ"/>
                         <viewControllerLayoutGuide type="bottom" id="8u7-LG-DB1"/>
@@ -42,7 +42,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z2B-Ou-OHp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z2B-Ou-OHp">
                                 <rect key="frame" x="95" y="89" width="131" height="121"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short Biography here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMn-Vy-SSb">
@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="309" width="320" height="259"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile_deal_cell_identifier" rowHeight="79" id="7jU-GZ-tNv" customClass="DealCustomTableCell" customModule="Deal" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile_deal_cell_identifier" rowHeight="79" id="7jU-GZ-tNv" customClass="ProfileCustomTableCell" customModule="Deal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7jU-GZ-tNv" id="oN4-6p-Qbr">
@@ -79,22 +79,27 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-TQ-dy7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="78"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reward" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-kY-nMr">
                                                     <rect key="frame" x="109" y="49" width="203" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-profile-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="gSo-TQ-dy7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="78"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="participant_label" destination="ZO0-Hd-7rh" id="PF3-GX-qeL"/>
+                                            <outlet property="reward_label" destination="4fB-kY-nMr" id="Hpp-k4-0eL"/>
+                                            <outlet property="task_label" destination="pCX-8z-Azp" id="KLE-cC-QSr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="Gzi-PV-BmO" id="r48-Hd-RDo"/>
-                                    <outlet property="delegate" destination="Gzi-PV-BmO" id="FOC-bV-214"/>
+                                    <outlet property="dataSource" destination="Gzi-PV-BmO" id="uMf-0V-cu6"/>
+                                    <outlet property="delegate" destination="Gzi-PV-BmO" id="Wb6-j6-BJX"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-N7-Rsg">
@@ -109,10 +114,20 @@
                                     <segue destination="4KI-dR-dSQ" kind="modal" id="ZEE-lY-Nc4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBa-Mj-qqS">
+                                <rect key="frame" x="16" y="15" width="34" height="30"/>
+                                <state key="normal" title="back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back_btn_pressed:" destination="jUj-Iw-1Mi" eventType="touchUpInside" id="y3O-MS-oIT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="back_btn" destination="HBa-Mj-qqS" id="dC6-cC-hR9"/>
                         <outlet property="tableView" destination="Nfd-LV-mhc" id="ygu-dK-xHI"/>
                     </connections>
                 </viewController>
@@ -383,6 +398,7 @@
         <image name="Create_Deal.png" width="77" height="77"/>
         <image name="Deals_Text_Logo.png" width="710" height="214"/>
         <image name="Three_Bar.png" width="83" height="46"/>
+        <image name="add_deal.png" width="512" height="512"/>
         <image name="icon-profile-default.png" width="393" height="390"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

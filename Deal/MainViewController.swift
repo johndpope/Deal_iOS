@@ -156,7 +156,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
 
-    /*
+    
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         
         if sender is UIButton {
@@ -164,22 +164,11 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
                 return false
             }
         }
-        
-        if identifier == login_segue_identifier {
-            if logged_in {
-                println ("%%%%%%%% Not Logging in !!")
-                return false
-            }
-            ("%%%%%%%% Logging in !!")
-           
-        }
         return true
-    }*/
+    }
     
-    
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        let makeDealViewController = segue.destinationViewController as! UIViewController
 
         if segue.identifier == specific_make_deal_segue_identifier{
             
@@ -194,7 +183,9 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
                 candyDetailViewController.title = destinationTitle
             }*/
         } else if segue.identifier == show_profile_segue_identifier {
+            let dv = segue.destinationViewController as! ProfileViewController
             
+            dv.select_user = sender as? User
         } else if segue.identifier == deal_detail_segue_identifer {
             
             
@@ -242,6 +233,7 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
         for user in all_users {
             appDelegate.deal_data_manager!.add_user(user)
         }
+        appDelegate.deal_data_manager!.cur_user = all_users [0]
     }
 
     
