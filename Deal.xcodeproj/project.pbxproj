@@ -65,6 +65,7 @@
 		1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */; };
 		1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDBF2DF1ABEAB5200A0C45D /* LaunchScreen.xib */; };
 		1BDBF2ED1ABEAB5200A0C45D /* DealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBF2EC1ABEAB5200A0C45D /* DealTests.swift */; };
+		1BDE73871AE360E0000412E4 /* ProfileCustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE73861AE360E0000412E4 /* ProfileCustomTableCell.swift */; };
 		1BE7C09F1ADC79AE00E029F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7C09E1ADC79AE00E029F3 /* MainViewController.swift */; };
 		1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE7C0A01ADC953700E029F3 /* add_deal.png */; };
 		1BE7C0A31ADCA20D00E029F3 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7C0A21ADCA20D00E029F3 /* Deal.swift */; };
@@ -147,6 +148,7 @@
 		1BDBF2E61ABEAB5200A0C45D /* DealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BDBF2EB1ABEAB5200A0C45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BDBF2EC1ABEAB5200A0C45D /* DealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealTests.swift; sourceTree = "<group>"; };
+		1BDE73861AE360E0000412E4 /* ProfileCustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCustomTableCell.swift; sourceTree = "<group>"; };
 		1BE7C09E1ADC79AE00E029F3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1BE7C0A01ADC953700E029F3 /* add_deal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_deal.png; sourceTree = "<group>"; };
 		1BE7C0A21ADCA20D00E029F3 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
@@ -274,23 +276,20 @@
 		1BDBF2D11ABEAB5100A0C45D /* Deal */ = {
 			isa = PBXGroup;
 			children = (
+				1BDE73891AE361F2000412E4 /* Meta */,
+				1BDE73881AE361E0000412E4 /* Models */,
 				1BBF409A1ADDA01700B2082B /* DealDetailViewController.swift */,
-				1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */,
 				1B5788DA1AD1BE6000A6D0BA /* DealCreateViewController.swift */,
 				1BE7C09E1ADC79AE00E029F3 /* MainViewController.swift */,
-				1BE7C0A21ADCA20D00E029F3 /* Deal.swift */,
-				1BE7C0A41ADD902E00E029F3 /* DealDataManager.swift */,
 				1BBF409C1ADDBBC400B2082B /* DealCustomTableCell.swift */,
+				1BDE73861AE360E0000412E4 /* ProfileCustomTableCell.swift */,
 				1B865A0E1AE038480054208C /* ProfileViewController.swift */,
-				95A6E99C1AE1B34F00F23DA6 /* AWSHeader.h */,
-				1B21B75F1AE1DAD9004931C6 /* DealConstants.swift */,
 				1B2230531AE213A20082CF32 /* LoginViewController.swift */,
 				1BDBF2DF1ABEAB5200A0C45D /* LaunchScreen.xib */,
 				1BDBF2DA1ABEAB5200A0C45D /* Main.storyboard */,
 				1BBF40A21ADFBBC500B2082B /* DealData.xcdatamodeld */,
 				1BDBF2DD1ABEAB5200A0C45D /* Images.xcassets */,
 				1BDBF2D21ABEAB5200A0C45D /* Supporting Files */,
-				95A6E9FF1AE2284300F23DA6 /* User.swift */,
 			);
 			path = Deal;
 			sourceTree = "<group>";
@@ -320,6 +319,26 @@
 				1BDBF2EB1ABEAB5200A0C45D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BDE73881AE361E0000412E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BE7C0A41ADD902E00E029F3 /* DealDataManager.swift */,
+				1BE7C0A21ADCA20D00E029F3 /* Deal.swift */,
+				95A6E9FF1AE2284300F23DA6 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1BDE73891AE361F2000412E4 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				1BDBF2D41ABEAB5200A0C45D /* AppDelegate.swift */,
+				1B21B75F1AE1DAD9004931C6 /* DealConstants.swift */,
+				95A6E99C1AE1B34F00F23DA6 /* AWSHeader.h */,
+			);
+			name = Meta;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +467,7 @@
 				1BBF409B1ADDA01700B2082B /* DealDetailViewController.swift in Sources */,
 				1B865A0F1AE038480054208C /* ProfileViewController.swift in Sources */,
 				1B5788DB1AD1BE6000A6D0BA /* DealCreateViewController.swift in Sources */,
+				1BDE73871AE360E0000412E4 /* ProfileCustomTableCell.swift in Sources */,
 				1BBF409D1ADDBBC400B2082B /* DealCustomTableCell.swift in Sources */,
 				1BBF40A41ADFBBC500B2082B /* DealData.xcdatamodeld in Sources */,
 				1BE7C09F1ADC79AE00E029F3 /* MainViewController.swift in Sources */,
@@ -584,10 +604,6 @@
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/third-party",
 					/Users/dokwon/Documents/FacebookSDK,
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks",
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/third-party",
-					/Users/kisukjang/Documents/FacebookSDK,
 					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = Deal/Info.plist;
@@ -607,10 +623,6 @@
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
 					"/Users/dokwon/Downloads/aws-ios-sdk-2.1.1/third-party",
 					/Users/dokwon/Documents/FacebookSDK,
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks",
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/frameworks/extras",
-					"/Users/kisukjang/Downloads/aws-ios-sdk-2.1.1/third-party",
-					/Users/kisukjang/Documents/FacebookSDK,
 					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = Deal/Info.plist;

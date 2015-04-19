@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewContoller : UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ProfileViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     required init(coder aDecoder: NSCoder) {
@@ -18,7 +18,11 @@ class ProfileViewContoller : UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
+    @IBOutlet weak var back_btn: UIButton!
     
+    @IBAction func back_btn_pressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     var select_user : User?
     var filtered_deals : [Deal] = []
     
@@ -38,6 +42,8 @@ class ProfileViewContoller : UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         get_deals_for_user ()
+        tableView.dataSource = self
+        tableView.delegate = self
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
@@ -61,9 +67,9 @@ class ProfileViewContoller : UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(profile_deal_cell_identifier, forIndexPath: indexPath)as? DealCustomTableCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(profile_deal_cell_identifier, forIndexPath: indexPath)as? ProfileCustomTableCell
         if (cell == nil) {
-            cell = DealCustomTableCell (style: UITableViewCellStyle.Default, reuseIdentifier: profile_deal_cell_identifier)
+            cell = ProfileCustomTableCell(style: UITableViewCellStyle.Default, reuseIdentifier: profile_deal_cell_identifier)
         }
         let row = indexPath.row
         cell!.populate_with_data(filtered_deals[row])

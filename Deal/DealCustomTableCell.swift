@@ -37,6 +37,8 @@ class DealCustomTableCell: UITableViewCell {
     
     @IBAction func profile_picture_pressed(sender: AnyObject) {
         let rootViewController = self.window!.rootViewController
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let dealee = appDelegate.deal_data_manager?.find_user(self.deal!.Dealee_Id)
         let alertController = UIAlertController(title: nil, message: "Pick option", preferredStyle: .ActionSheet)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
@@ -46,13 +48,13 @@ class DealCustomTableCell: UITableViewCell {
         
         let OKAction = UIAlertAction(title: "Show Profile", style: .Default) { (action) in
             let rootViewController = self.window!.rootViewController
-            rootViewController!.performSegueWithIdentifier(show_profile_segue_identifier, sender: sender)
+            rootViewController!.performSegueWithIdentifier(show_profile_segue_identifier, sender: dealee)
         }
         alertController.addAction(OKAction)
         
         let destroyAction = UIAlertAction(title: "Make Deal", style: .Default) { (action) in
             let rootViewController = self.window!.rootViewController
-            rootViewController!.performSegueWithIdentifier(specific_make_deal_segue_identifier, sender: sender)
+            rootViewController!.performSegueWithIdentifier(specific_make_deal_segue_identifier, sender: dealee)
         }
         alertController.addAction(destroyAction)
         
@@ -63,14 +65,9 @@ class DealCustomTableCell: UITableViewCell {
     
     func populate_with_data (deal : Deal) {
         self.deal = deal
-        println (deal.Task)
-        if (task_label == nil) {
-            println ("Found nil!")
-        }
         task_label.text = deal.Task
         reward_label.text = deal.Reward
         participant_label.text = generate_deal_string (deal)
-        
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

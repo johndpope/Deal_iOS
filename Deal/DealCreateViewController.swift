@@ -18,6 +18,12 @@ class DealCreateViewController: UIViewController {
 
     var new_deal : Deal
     
+    var dealee : User?
+    
+    func set_delee (user1: User) {
+        self.dealee = user1
+    }
+    
     var parent_agreed : Bool = false
     var kid_agreed : Bool = false
     
@@ -61,8 +67,6 @@ class DealCreateViewController: UIViewController {
         if (rewardTextField.text == "" || taskTextField.text == "") {
             errorMessage = "You must enter both a task an a reward. Complete missing fields."
         } else {
-            
-        
             if (parent_agreed && kid_agreed) {
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.deal_data_manager!.saveDeal(new_deal)
