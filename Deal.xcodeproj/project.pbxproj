@@ -74,6 +74,9 @@
 		95531BE81AE3683E00A617D6 /* Background_Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE71AE3683E00A617D6 /* Background_Blur.png */; };
 		95531BEA1AE3684500A617D6 /* Create_Deal.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BE91AE3684500A617D6 /* Create_Deal.png */; };
 		95531BEC1AE3684B00A617D6 /* Three_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BEB1AE3684B00A617D6 /* Three_Bar.png */; };
+		95531BEE1AE36A8F00A617D6 /* Back_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BED1AE36A8F00A617D6 /* Back_Arrow.png */; };
+		95531BF01AE36AF100A617D6 /* Make_A_Deal_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BEF1AE36AF100A617D6 /* Make_A_Deal_Button.png */; };
+		95531BF21AE36C4400A617D6 /* Blurry_Background_Profile_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 95531BF11AE36C4300A617D6 /* Blurry_Background_Profile_Image.png */; };
 		95A6E9961AE1B27300F23DA6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */; };
 		95A6E9981AE1B27900F23DA6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9971AE1B27900F23DA6 /* libz.dylib */; };
 		95A6E99A1AE1B28000F23DA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */; };
@@ -161,6 +164,9 @@
 		95531BE71AE3683E00A617D6 /* Background_Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Blur.png; sourceTree = "<group>"; };
 		95531BE91AE3684500A617D6 /* Create_Deal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Create_Deal.png; sourceTree = "<group>"; };
 		95531BEB1AE3684B00A617D6 /* Three_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Three_Bar.png; sourceTree = "<group>"; };
+		95531BED1AE36A8F00A617D6 /* Back_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_Arrow.png; sourceTree = "<group>"; };
+		95531BEF1AE36AF100A617D6 /* Make_A_Deal_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Make_A_Deal_Button.png; sourceTree = "<group>"; };
+		95531BF11AE36C4300A617D6 /* Blurry_Background_Profile_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blurry_Background_Profile_Image.png; sourceTree = "<group>"; };
 		95A6E9951AE1B27300F23DA6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		95A6E9971AE1B27900F23DA6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		95A6E9991AE1B28000F23DA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -305,6 +311,9 @@
 		1BDBF2D21ABEAB5200A0C45D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95531BF11AE36C4300A617D6 /* Blurry_Background_Profile_Image.png */,
+				95531BEF1AE36AF100A617D6 /* Make_A_Deal_Button.png */,
+				95531BED1AE36A8F00A617D6 /* Back_Arrow.png */,
 				95531BEB1AE3684B00A617D6 /* Three_Bar.png */,
 				95531BE91AE3684500A617D6 /* Create_Deal.png */,
 				95531BE71AE3683E00A617D6 /* Background_Blur.png */,
@@ -450,13 +459,16 @@
 				1B22309F1AE234260082CF32 /* cognito-identity-2014-06-30.json in Resources */,
 				1B2230A91AE234260082CF32 /* monitoring-2010-08-01.json in Resources */,
 				95531BEC1AE3684B00A617D6 /* Three_Bar.png in Resources */,
+				95531BEE1AE36A8F00A617D6 /* Back_Arrow.png in Resources */,
 				1BDBF2DC1ABEAB5200A0C45D /* Main.storyboard in Resources */,
 				1B2230AA1AE234260082CF32 /* s3-2006-03-01.json in Resources */,
+				95531BF21AE36C4400A617D6 /* Blurry_Background_Profile_Image.png in Resources */,
 				1BE7C0A11ADC953700E029F3 /* add_deal.png in Resources */,
 				1B2230A31AE234260082CF32 /* elasticloadbalancing-2012-06-01.json in Resources */,
 				1B2230A81AE234260082CF32 /* mobileanalytics-2014-06-30.json in Resources */,
 				95531BE61AE3683700A617D6 /* Deals_Text_Logo.png in Resources */,
 				95531BEA1AE3684500A617D6 /* Create_Deal.png in Resources */,
+				95531BF01AE36AF100A617D6 /* Make_A_Deal_Button.png in Resources */,
 				1BDBF2E11ABEAB5200A0C45D /* LaunchScreen.xib in Resources */,
 				1BBF409F1ADDBF1800B2082B /* icon-profile-default.png in Resources */,
 				1BDBF2DE1ABEAB5200A0C45D /* Images.xcassets in Resources */,
