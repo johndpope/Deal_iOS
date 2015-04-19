@@ -205,12 +205,12 @@ class MainViewConroller: UIViewController, UITableViewDelegate, UITableViewDataS
     
     
     override func viewDidAppear(animated: Bool) {
-        if (FBSDKAccessToken.currentAccessToken() == nil)  {
+        /*if (FBSDKAccessToken.currentAccessToken() == nil)  {
             //performSegueWithIdentifier (login_segue_identifier, sender:self)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewControllerWithIdentifier("login_controller_id") as! UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
-        }
+        }*/
         
         filter_deals (Deal.FilterType.ME_FILTER_TYPE)
         self.tableView.reloadData()
